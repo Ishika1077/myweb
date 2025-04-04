@@ -1,41 +1,53 @@
-g<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    
-    <title>Photo</title>
+
+<title>photo gallery </title>
 </head>
 <style>
-    @keyframes zoomout
-    {
-        from{transform:scale(3)}
-        to{tranform:scale(1)}
-    }
-    
-    .pic1
-    {
 
-    
-    width:62%;
-    text-align:center;
-    animation: zoomout 1s;
-    
-    }
-    header
-    {
-        text-align:center;
-        
-    }    
+
+@keyframes fadeout
+{
+from{transform:scale(3)}
+to{transform:scale(1)}
+}
+
+header
+{
+color:white
+}
+
+body
+{
+background:black;
+text-align:center;
+}
+
+.pic1
+{
+width:60%;
+margin:60px;
+box-shadow:0px 10px 30px cyan;
+transition:0.50s;
+animation:zoomout 1s;
+}
+
 </style>
-<body>
-    <header>
-       <a href="PhotoGallery.html">
-    
-    <img src="images/close1.png" style="width:3%">
-     </a>
 
-    </header>
-    
-    <img src="images/i1.jpg"class=pic1>
-    
+<body>
+<header>
+<a href="PhotoGallery.html">
+<img src="images/close1.png" style="width:3%">
+</a>
+
+</header>
+
+<body>
+<img src="images/i1.jpg" class="pic1">
 </body>
+
+
+
+
 </html>
