@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>PhotoGallery</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
 </head>
 <style>
     @keyframes fadeout
@@ -30,7 +34,7 @@
     }
     html
     {
-        animation:fadeout 1s;
+        animation:fadeout 4s;
 
     }
     .pic
@@ -48,6 +52,161 @@
         transform:scale(1.20);
         box-shadow: 0px 10px 30px goldenrod;
         }
+
+
+
+        /*   Media Query  */
+
+ /* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+ {
+   body{
+    text-align: center;
+   } 
+   .header{
+    
+    font-size: 25px;
+    border-radius:10px ;
+     width: 70%;
+     box-shadow: 8px 0px 20px cyan;
+	      
+	
+        
+   
+        
+    	}
+          
+
+		.pic
+			{
+			width:70%;
+			margin:20px;
+			border-radius:20px;
+            box-shadow: 0px 10px 20px cyan;
+			}
+
+
+
+ }
+
+
+ /*  Small devices (portrait tablets and large phones, 600px and up)  */
+
+@media only screen and (min-width: 600px) 
+{
+    body{
+        text-align: center;
+    
+    .header{
+  
+  font-size: 30px;
+  width: 50%;
+  box-shadow: 8px 0px 20px cyan;
+  border-radius: 10px;
+ 
+   }
+		
+	
+
+                   .pic
+			{
+			width:50%;
+			margin:35px;
+			border-radius:10px;
+            box-shadow: 0px 10px 20px cyan;
+			}
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+@media only screen and (min-width: 768px)
+ {
+    
+body {background-color: ;
+
+    .header
+   {
+    font-size: 40px;
+    border-radius:10px ;
+     width: 60%;
+     box-shadow: 8px 0px 20px cyan;
+	      
+
+
+   }
+   .pic
+   {
+        width: 40%;
+        border-radius: 40px;
+        margin: 40px;
+        box-shadow: 0px 10px 30px cyan;
+   
+    }
+
+   
+
+
+
+ }
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px)
+ {
+    body{background-color: ;
+    
+        .header
+   {
+    font-size: 40px;
+    border-radius:10px ;
+    width: 60%;
+    box-shadow: 8px 8px 30px cyan;
+   }
+	      
+    .pic
+    {
+			width:25%;
+			margin: 35px;
+			border-radius:200px;
+            box-shadow: 0px 10px 30px cyan;
+	}
+
+          
+
+
+
+ }
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px)
+ {
+    body{background-color: ;
+        header
+	{
+	 font-size:60px;
+	}
+
+		.pic
+		{
+			width: 15%;
+        height: 210px;
+        margin: 60px;
+        border-radius: 200px;
+        box-shadow: 0px 10px 30px cyan;
+		}
+
+
+ }
+
 </style>
 <body bgcolor="black">
 <header class="header">
