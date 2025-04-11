@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu list</title>
+</head>
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2e1c10;
+  color: beige;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 32px;
+  background-color: #1d120b;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 3px;
+ 
+}
+
+.featured {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 16px;
+}
+
+.item {
+  text-align: center;
+  position: relative;
+}
+
+.item img {
+  width: 400px;
+  border-radius: 8px;
+}
+
+.item .price {
+  background: #a47c53;
+  color: white;
+  border-radius: 50%;
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px;
+}
+
+.column {
+    width: 40%;}
+
+    .column h3{
+        border-bottom: 1px solid #c7a17a;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+    }
+
+    .column ul{
+        list-style: none;
+        padding: 0%;
+
+    }
+
+    .column li{
+        display:flex;
+        justify-content: space-between;
+        margin: 8px;
+    }
+</style>
+<body>
+    <header>
+        <div img src="images/coffee logo.png">
+        </div>
+        <h1>Cafe Menu</h1>
+
+    </header>
+    <main>
+        <section class="featured">
+        <div class="item">
+            <img src="images/coffee menu.jpg">
+            <p>Classic Coffee</p>
+         </div>
+            <div class="item">
+                <img src="images/shake menu.jpg">
+
+                <p>Sweet Shakes</p>
+             </div>
+
+    </section>
+    <section class="menu">
+        <div class="column">
+            <h3>Coffee Drink Menu</h3>
+            <ul>
+                <li>
+                    Cappuccino
+                    <span>350/-</span>
+                </li>
+                <li>
+                    Vanilla Latte
+                    <span>390/-</span>
+                </li>
+                <li>
+                    Blonde Almonde Latte
+                    <span>385/-</span>
+                </li>
+                <li>
+                    Honey Almond Flat White
+                    <span>390/-</span>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Shakes Drink Menu</h3>
+            <ul>
+                <li>
+                    Chocolate Mikshake
+                    <span>250/-</span>
+                </li>
+                <li>
+                    Strawberry Mikshake
+                    <span>100/-</span>
+                </li>
+                <li>
+                    Mango Milkshake
+                    <span>100/-</span>
+                </li>
+                <li>
+                    Choco Chip Milkshake
+                    <span>250/-</span>
+                </li>
+                <li>
+                    Butterscotch Milkshake
+                    <span>250/-</span>
+
+                </li>
+                <li>
+                    Kit Kat Milkshake
+                    <span>250/-</span>
+                </li>
+                <li>
+                    Oreo Milkshake
+                    <span>250/-</span>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    </main>
+    </div>
+    
+</body>
+</html>
