@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    header
+    {
+     width: 60%;
+     height: 400px;
+     background-color: black;
+     text-align:center;
+     margin: auto;
+     box-shadow: 0px 10px 30px white;
+
+    }
+
+    header img{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    nav{
+        width: 35%;
+        background-color: beige;
+        text-align: left;
+        padding-left: 10px;
+        margin-top:14px;
+        cursor:pointer;
+    }
+
+    nav ol{
+        list-style: none;
+        margin-left: 100px;
+
+    }
+
+    nav ol li
+    {
+        display: inline;
+        padding: 10px;
+        background:rgb(53, 53, 173);
+        margin-left: 40px;
+        box-shadow: 0px 10px 10px whitesmoke;
+        cursor: pointer;
+        transition: 1.50s;
+        display: none;
+    }
+
+    nav:hover ol li{
+        display: block;
+
+    }
+
+    nav ol li:hover a:visited{
+        color: white;
+
+    }
+    nav ol li a:link{
+        color: burlywood;
+        text-decoration: none;
+
+    }
+
+    nav ol li a:visited{
+        color: burlywood;
+
+    }
+    nav ol li a:visited{
+        color: white;
+
+
+    }
+    
+        /*   Media Query  */
+
+ /* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+ {
+    header
+    {
+     width: 60%;
+     height: 200px;
+    }
+
+    nav{
+        width: 70%;
+    }
+
+
+ }
+
+
+ /*  Small devices (portrait tablets and large phones, 600px and up)  */
+
+ @media only screen and (min-width: 600px) 
+{
+
+    
+    header
+    {
+     width: 60%;
+     height: 250px;
+     
+    }
+    nav{
+        width: 80%;
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+@media only screen and (min-width: 768px)
+ {
+
+    header
+    {
+     width: 50%;
+     height: 300px;
+     
+    }
+    nav{
+        width: 60%;
+    }
+
+
+ }
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px)
+ {
+    header
+    {
+     width: 60%;
+     height: 400px;
+     
+    }
+
+ }
+
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px)
+ {
+    header
+    {
+     width: 60%;
+     height: 400px;
+     
+    }
+
+ }
+
+
+
+
+
+</style>
+<body bgcolor="black">
+    <header>
+        <img src="images/uxui.webp">
+    </header>
+
+
+    <nav>
+
+        <div>
+            <img src="images/menu.png">
+        </div>
+
+
+        <ol>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Practice.html">Practice Pages</a></li>
+            <li><a href="https://www.behance.net/ishikasharma42">Behance</a></li>
+            <li><a href="#">Projects</a></li>
+            
+
+        </ol>
+    </nav>
+    <div style="height: 300px"></div>
+</body>
+</html>
