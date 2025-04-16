@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        color:Black;
+        font-size: 50px;
+        text-align: center;
+        font-family: arial black;
+        width: 60%;
+        margin: auto;
+        text-decoration: underline;
+
+    }
+
+    table th{
+        color: rgb(243, 74, 8);
+
+    }
+    #main table{
+        text-align: center;
+        margin: auto;
+
+    }
+
+    #main
+    {
+        width: 70%;
+        margin: auto;
+        //background:gray;
+    }
+    #main table td:hover{
+        transition: 2s;
+        background: cyan;
+
+    }
+    #main table tr{
+        background:yellow;
+        transition: 2s;
+
+    }
+
+    #main table tr:hover{
+        background: rgb(185, 243, 243);
+
+    }
+
+      /*   Media Query  */
+
+ /* Extra small devices (phones, 600px and down) */
+
+ @media only screen and (max-width: 600px)
+ {
+    header{
+        
+        font-size: 20px;
+        
+    }
+    #main table{
+        text-align: center;
+        margin: auto;
+
+    }
+    #main
+    {
+        width: 90%;
+        height: 70px;
+        text-align: center;
+        margin: auto;
+    }
+    
+ }
+
+
+ /*  Small devices (portrait tablets and large phones, 600px and up)  */
+
+ @media only screen and (min-width: 600px) 
+{
+    header{
+        
+        font-size: 20px;
+        
+    }
+    #main table{
+        text-align: center;
+        margin: auto;
+
+    }
+    #main
+    {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+@media only screen and (min-width: 768px)
+ {}
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px)
+ {}
+
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px)
+ {}
+
+</style>
+<body>
+    <header>Table in HTML</header>
+    <div id="main">
+<table border="1" cellpadding="20" cellspacing="0">
+<caption style="color:red;font-size:30px">Marks List</caption>
+
+<tr>
+    <td colspan="6" style="text-align:center;color: rgb(222, 222, 129);background: Blue;font-size: 150%;"><b>Modern School</b> </td>
+
+</tr>
+
+
+<tr style="background:rgb(244, 177, 53, 0.929)">
+    <th>Roll No</th><th>Name</th><th>Maths</th><th>Science</th><th>English</th><th>Computer</th>
+</tr>
+<tr>
+    <td>101</td><td>Mansi</td><td>80</td><td>90</td><td>90</td><td>90</td>
+   </tr>
+
+
+   <tr>
+    <td>102</td><td>Raj</td><td>60</td><td>50</td><td>56</td><td>70</td>
+   </tr>
+
+   
+   <tr>
+    <td>103</td><td>Ishika</td><td>100</td><td>100</td><td>100</td><td>100</td>
+   </tr>
+
+
+   <tr>
+    <td>104</td><td>Nandini</td><td>60</td><td>50</td><td>56</td><td>70</td>
+   </tr>
+
+
+   <tr>
+    <td>105</td><td>Abhay</td><td>10</td><td>20</td><td>20</td><td>0</td>
+   </tr>
+
+<tr>
+    <td colspan="6" style="color:white;background:rgb(248, 129, 32);text-align: left">End Report</td>
+</tr>
+
+</table>
+
+    </div>
+</body>
+</html>
