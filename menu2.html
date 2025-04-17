@@ -20,40 +20,47 @@ header img{
     height: 100%;
 }
 nav{
-    width: 70%;
+    width: 10%;
     /background:orange;
-    margin:auto;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
     margin-top: 40px;
+    cursor: pointer;
 
 
 }
 nav ol{
     list-style: none;
+    margin-left: 100px;
 
 }
 nav ol li{
-    display: inline;
     padding: 20px;
+    margin-left: 34px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
     background: teal;
-    margin: auto;
+    display: none;
     transition:1.50s;
 
     }
+    nav:hover ol li{
+        display:block;
+    }
     nav ol li:hover a:visited{
-        color:red;
+        color:aliceblue;
 
     }
     nav ol li a:link{
-        color: white;
+        color: burlywood;
         text-decoration: none;
 
     }
     nav ol li a:visited{
-        color: white;
+        color: burlywood;
     }
     nav ol li a:hover{
-        color:red;
+        color:aliceblue;
     }
     
         /*   Media Query  */
@@ -63,13 +70,41 @@ nav ol li{
  @media only screen and (max-width: 600px)
  {
 
-    header{
-        height:200px ;
+    body{}
+    
+    header
+    {
+     width: 100%;
+     height: 200px;
+     display:none;
     }
-    
-    
-    nav ol li{
+
+    header img{
+        width: 100%;
+        height: 100%;
+    }
+
+   
+    nav:hover ol li{
+        cursor: pointer;
+        background: teal;
+        margin-left: -60%;
+       
+
+    }
+    nav:hover{
+        
+        cursor: pointer;
+        width: 60%;
+        display:block;
+        margin-left: 0%;
+
+    }
+    nav ol li:hover{
         display: block;
+        margin: auto;
+        width: 60%;
+        margin-left: -50%;
     }
  }
 
@@ -78,30 +113,108 @@ nav ol li{
 
  @media only screen and (min-width: 600px) 
 {
-    nav ol li{
-display: block;
+    body{}
+ header
+    {
+    width:70%;
+    height: 200px;
+    
+    }
+
+  header img
+  {
+   width:100%;
+   height:100%;
+  }
+ nav{width:100%;
 }
 
+ 
+ nav:hover ol li{
+        cursor: pointer;
+        background: teal;
+      
+        display: inline;
+ }
+ nav:hover{
+    width: 60%;}
+ nav ol
+{
+margin-left:0px;
+}
+
+nav ol li
+{
+padding:10px;
+margin-left:-4px;
+}
+
+
+
+
+
+}
 /* Medium devices (landscape tablets, 768px and up) */
 
 
 @media only screen and (min-width: 768px)
  {
-    nav ol li{
-display: inline;
+   
+
+  header
+  {
+   width:80%;
+   height:350px;
+  }
+  nav{width:100%;
+}
+
+ 
+ nav:hover ol li{
+        cursor: pointer;
+        background: teal;
+      
+        display: inline;
+ }
+ nav:hover{
+    width: 60%;}
+ nav ol
+{
+margin-left:0px;
+}
+
+nav ol li
+{
+padding:10px;
+margin-left:-4px;
+}
+
+
  }
 
 
  /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px)
- {}
+ @media only screen and (min-width: 992px)
+ {
+    header
+  {
+   width:50%;
+   height:300px;
+  }
+ }
 
 
  /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px)
- {}
+ {
+    header
+  {
+   width:50%;
+   height:300px;
+  }
+ }
     
 </style>
 <body>
@@ -109,16 +222,19 @@ display: inline;
         <img src="images/uxui.webp">
     </header>
 <nav>
+    <div style="height: 90px">
+        <img src="images/menu.png">
+    </div>
 
     <ol>
-    <li><a href="">Home</a></li>
-    <li><a href="">Practice Pages</a></li>
-    <li><a href="">Behance</a></li>
-    <li><a href="">Projects</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Practice.html">Practice Pages</a></li>
+    <li><a href="https://www.behance.net/ishikasharma42">Behance</a></li>
+    <li><a href="#">Projects</a></li>
 
     </ol>
 </nav>
-<div style="height:300px"></div>
+
 
 </body>
 </html>
