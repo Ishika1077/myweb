@@ -2,56 +2,115 @@
 <html>
 <head>
     
-    <title>Practice Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <style>
+      body{
+        background-image: url(images/pink.jpg);
+        width: 100%;
+        height: 100%;
+    }
+    
 h1{
-    text-decoration: underline;
-    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    text-align:center;
+font-size:50px;
+width:400px;
+margin:auto;
+box-shadow:10px 10px 30px rgb(226, 237, 247);
+color:pink;
+background-color:blanchedalmond;
+margin-top: 3%;
+
+
+}
+#title
+{
+
+width:40%;
+text-align: center;
+margin:auto;
+margin-left: 28%;
+margin-top:40px;
+color:aliceblue;
 }
 
 
+#title ol li 
+{
 
-   nav
-    {
-        background:aquamarine;
-        width: 90%;
-        height:50px;
-        box-shadow: 5px 5px 10px  gray;
-        margin-left: 0%;
-       text-align: center;
-       font-size: 150%;
-        }
-        nav a:link
-        {
-            color:blue;
-            text-decoration: none;
-            padding: 20px;
-            transition: 1s;
-         }
-         nav a:visited
-         {
-            color:purple;
+width:30%px;
+text-align:center;
+padding:10px;
+cursor:pointer;
+transition:0.50s;
+list-style:none;
+border:1px black solid;
+border-radius:10px;
+margin-left:30px;
+color:beige;
+}
 
-         }
-         nav a:hover
-         {
-            text-decoration: underline;
-            color:blue;}
+#title ol li :link{
+
+    color:beige;
+}
+#title ol li :visited{
+    color:black;
+   
+}
+#title ol li :hover
+{
+color:rgb(217, 233, 243);
+transform:scale(1.20);
+text-decoration: underline;
+
+}
+
+
+ /*   Media Query  */
+
+ /* Extra small devices (phones, 600px and down) */
+
+ @media only screen and (max-width: 600px)
+ {
+
+    h1{
+        width: 300px;
+        font-size: 40px;
+        margin-top: 5%;
+        
+    }
+ }
+
+
+
 </style>
-<body bgcolor="black">
-    <h1>Practice Page</h1>
-    <nav>
-        <a href="index.html">Home</a>
+<body>
+    <h1>Practice Work</h1>
+    <div id="title">
+        <ol>
+       <li> <a href="index.html">Home</a></li>
         
-        <a href="PhotoGallery.html">Photo web</a>
-        
-        <a href="list in html.html">list</a>
-        
-        <a href="menu2.html">Menu</a>
+       <li><a href="PhotoGallery.html">Photo web</a></li>
 
-        <a href="table.html">Table</a>
-    </nav>
+       <li><a href="menu2.html">Menu</a></li>
+
+        
+        <li> <a href="list in html.html">list</a></li>
+        
+        <li><a href="table.html">Table</a></li>
+
+        <li><a href="Div1.html">Div</a></li>
+       </ol> 
+    </div>
     
 </body>
 </html>
