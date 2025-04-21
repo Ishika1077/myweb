@@ -8,46 +8,42 @@
 <style>
     header{
         color:Black;
-        font-size: 50px;
+        background-color: plum;
+        font-size: 30px;
         text-align: center;
         font-family: arial black;
-        width: 60%;
+        width: 40%;
         margin: auto;
         text-decoration: underline;
 
     }
 
-    table th{
-        color: rgb(243, 74, 8);
-
-    }
-    #main table{
-        text-align: center;
-        margin: auto;
-
-    }
 
     #main
     {
         width: 70%;
+    
         margin: auto;
         //background:gray;
     }
+    #main table{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+
+    }
+    
+    table th{
+        color: rgb(243, 74, 8);
+
+    }
+   
     #main table td:hover{
         transition: 2s;
         background: cyan;
 
     }
-    #main table tr{
-        background:yellow;
-        transition: 2s;
-
-    }
-
-    #main table tr:hover{
-        background: rgb(185, 243, 243);
-
-    }
+    
 
       /*   Media Query  */
 
@@ -57,71 +53,36 @@
  {
     header{
         
-        font-size: 20px;
+        font-size: 25px;
+        width: 50%;
         
+    }
+   
+
+    
+    #main
+    {
+        width: 70%;
+        text-align: center;
+
+     
     }
     #main table{
         text-align: center;
         margin: auto;
-
-    }
-    #main
-    {
-        width: 90%;
-        height: 70px;
-        text-align: center;
-        margin: auto;
-    }
+        width: 100%;
     
  }
-
-
- /*  Small devices (portrait tablets and large phones, 600px and up)  */
-
- @media only screen and (min-width: 600px) 
-{
-    header{
-        
-        font-size: 20px;
-        
-    }
-    #main table{
-        text-align: center;
-        margin: auto;
-
-    }
-    #main
-    {
-        width: 90%;
-        text-align: center;
-        margin: auto;
-    }
+ 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-
-
-@media only screen and (min-width: 768px)
- {}
-
-
- /* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px)
- {}
-
-
- /* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px)
- {}
 
 </style>
 <body>
     <header>Table in HTML</header>
     <div id="main">
-<table border="1" cellpadding="20" cellspacing="0">
-<caption style="color:red;font-size:30px">Marks List</caption>
+<table border="1" cellpadding="3" cellspacing="1">
+<caption style="color:blueviolet;font-size:25px">Marks List</caption>
 
 <tr>
     <td colspan="6" style="text-align:center;color: rgb(222, 222, 129);background: Blue;font-size: 150%;"><b>Modern School</b> </td>
