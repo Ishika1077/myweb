@@ -1,126 +1,246 @@
-<!DOCTYPE >
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My Profile</title>
- </head>
- <style>
-  .headerclass
-  {
-      width: 100%;
-      height: 50%px;
-      border:0%;
-      margin: auto;
-      margin-top: 30px;
-      padding: 2%;
-      background-color:beige;
-      margin: auto;
-      margin-top: 1%;
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Pacifico&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        background-color: F7EEED;
+        width: 100%;
+        height: 100%;
     }
-    .toph2
-    {
-      width: 70%;
-      height: 200px;
-      border:0%;
-      margin: auto;
-      margin-top: 30px;
-      background-color: aquamarine;
-      padding: 2%;
-      text-align: justify;
-    }
-    nav
-    {
-        background:aquamarine;
-        width: 50%;
-        height:40;
-        box-shadow: 5px 5px 10px  gray;
-        margin-left: 30%;
-      text-align: center;
-        }
-        nav a:link
+    #menu{
+        font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+width:60%;
+margin-left:600px;
+text-align:center;
+
+font-size:25px;
+display:flex;
+direction:row;
+color:white;   
+}
+#menu ul li{
+    display: inline;
+    text-align: center;
+    margin:20px;
+    list-style: none;
+    color: aliceblue;
+   
+}
+
+#menu ul li a:link
         {
-            color:blue;
+            color:beige;
             text-decoration: none;
             padding: 20px;
-            transition: 1s;
+            transition: 0.5s;
          }
-         nav a:visited
+         #menu ul li a:visited
          {
-            color:purple;
+            color:black;
 
          }
-         nav a:hover
+         #menu ul li a:hover
          {
             text-decoration: underline;
-            color:blue;
+            color:rgb(217, 233, 243);
             
          }
-         footer
-         {
-          width: 100%;
-      height: 100%px;
+
+.card{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    width: 20%;
+    height: 330px;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 1px;
+    /float: left;
+    padding:5px;
+    margin-left:55px;
+    background-color: #F6A6BB;
+    color:#F7EEED;
+}
+
+
+
+.pic{
+    width: 55%;
+    
+}
+#profile{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    width:70%;
+   
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 0%;
+    font-size: 30px;
+    color:#F191AC; 
+}
+#main{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 15px;
+    margin-top: 2%;
+     text-align: center;
+      padding: 0%;
+      margin-top: 10%;
+}
+     
+  
+.toph2{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+      width: 85%;
+      height: 200px;
       border:0%;
-      
-      margin-bottom: 70px;
-      padding: 2%;
-      background-color: beige;
-      
-        margin: auto;
-         
-    }
-/*   Media Query  */
+    
+      margin-left: 5%;
+      padding: 1%;
+      text-align: justify;
+}
+#footer{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 20px;
+    margin-top: 2%;
+     text-align: center;
+      padding: 0%;
+      margin-left:9%;
+     
+
+}
+
+ /*   Media Query  */
 
  /* Extra small devices (phones, 600px and down) */
 
  @media only screen and (max-width: 600px)
  {
-  
-  .toph2
-    {
-      width: 90%;
-      height: 350px;
-      border:0%;
-      margin: auto;
-      margin-top: 30px;
-      background-color: aquamarine;
-      padding: 2%;
-      text-align: justify;
 
-		
+    #menu ul li{
+    display: block;
+   
+    margin-left: -430%;
 
+    color: aliceblue;
+    margin-top: 1%;
+   
+}
 
-	
+         .card{
+    width: 60%;
+    height: 350px;
+    border-radius: 5%;
+    text-align: center;
+    margin-left:100px;}
+
+    #profile{
+   display: none;
+}
+#main{
+    
+    margin-top: 10%;
+}
+    
+.toph2{
+   
+     font-size: 16px;
+      width: 85%;
+      height: 200px;
+     
+      margin-left: 6%;
+      padding: 0%;
+     
+}
+#footer{
+   width: 80%;
+   margin-left: 6%;
+    font-size: 20px;
+    margin-top: 60%;
+     text-align: center;
+      padding: 0%;
+     
 
 }
 
-/*  Small devices (portrait tablets and large phones, 600px and up)  */
+}
 
-@media only screen and (min-width: 600px) 
+
+ /*  Small devices (portrait tablets and large phones, 600px and up)  */
+
+ @media only screen and (min-width: 600px) 
 {
-  .headerclass
-  {
-      width: 100%;
-      height: 50px;
-      border:0%;
-      margin: auto;
-      margin-top: 30px;
-      padding: 1%;
-      background-color:beige;
-      margin: auto;
-      margin-top: 1%;
-    }
-   .toph2
-    {
-      width: 90%;
-      height: 500px;
-      border:0%;
-      margin: auto;
-      margin-top: 30px;
-      background-color: aquamarine;
-      padding: 1%;
-      text-align: justify;
-    }
 
-	
+
+    #menu ul li{
+    display: block;
+   
+    margin-left: -440%;
+
+    color: aliceblue;
+    margin-top: 1%;
+   
+}
+
+         .card{
+    width: 50%;
+    height: 400px;
+    border-radius: 5%;
+    text-align: center;
+    margin-left:150px;
+}
+
+    #profile{
+   display: none;
+}
+#main{
+    
+    margin-top: 50%;
+}
+    
+.toph2{
+   
+     font-size: 16px;
+      width: 85%;
+      height: 200px;
+      margin-left: 6%;
+      padding: 0%;
+     
+}
+#footer{
+    width: 80%;
+    margin-left: 6%;
+    font-size: 20px;
+    margin-top: 50%;
+    text-align: center;
+    padding: 0%;
+     
+
+}
+
+
+
+
+
 
 
 
@@ -131,89 +251,235 @@
 
 @media only screen and (min-width: 768px)
  {
-  
-  .toph2
-    {
-      width: 100%;
-      height: 800px;
-      border:0%;
-      margin: auto;
-      margin-top: 30px;
-      background-color: aquamarine;
-      padding: 1%;
-      text-align: justify;
+   
+   
+
+    #menu ul li{
+    display: inline;
+    margin-left: 450px;
+   
+    margin: auto;
+    list-style: none;
+    color: aliceblue;
+    background-color: white;
     }
 
+
+         .card{
+    width: 35%;
+    height: 350px;
+    border-radius: 5%;
+    text-align: center;
+    margin-left:200px;
+}
+
+#profile{
+    display: contents;
+    width:70%;
+   
+    margin-left: 10%;
+   
+    text-align: center;
+    padding: 0%;
+    font-size: 20px;
+    color:#F191AC;
+}
+
+   
+#main{
     
+    margin-top: 10%;
+}
+    
+.toph2{
+   
+     font-size: 16px;
+      width: 85%;
+      height: 200px;
+      margin-left: 6%;
+      padding: 0%;
+     
+}
+#footer{
+    width: 80%;
+    margin-left: 6%;
+    font-size: 20px;
+    margin-top: 10%;
+    text-align: center;
+    padding: 0%;
+     
+
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+
+
+
+
+ }
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px)
  {
-  
+    #menu ul li{
+    display: inline;
+    text-align: center;
+    margin:20px;
+    list-style: none;
+    color: aliceblue;
+    
+    }
+   
+    .card{
+        font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    width: 20%;
+    height: 310px;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 1px;
+    float: left;
+    padding:8px;
+    margin-left:55px;
+    background-color:#F191AC;
+    color:#F7EEED;
+}
 
+
+
+.pic{
+    width: 45%;
+    
+}
+#profile{
+    width:70%;
+   
+    margin-left: 20%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0%;
+    font-size: 30px;
+    color:#F191AC;
+}
+#main{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 20px;
+    margin-top: 10%;
+     text-align: center;
+      padding: 0%;
+}
+     
+  
+.toph2{
+    font-family: "Poppins", sans-serif;
+  font-weight: 50%;
+  font-style: normal;
+  font-size: 18px;
+      width: 85%;
+      height: 200px;
+      border:0%;
+    
+      margin-left: 5%;
+      padding: 1%;
+      text-align: justify;
+}
+#footer{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 20px;
+    margin-top: 2%;
+     text-align: center;
+      padding: 0%;
+     margin-left: 9%;
 
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+ }
+
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px)
- {
- 
+ {}
 
 
-} 
 
 
-         
-    
+
+
+
+
+</style>
+
+<body>
   
- </style>
- <body bgcolor="beige">
-  <header class="headerclass">
-    <img src="images/my photo.png"width="10%">
-    <br>
-    <br>
-    <font color="black"><b>Ishika Sharma</b></font>
-    <BR>
-      <font color="black">UI/UX Designing</font>
 
 
-    
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="Practice.html">Practice</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-   </nav>
-<br>
-
-
-  </header>
-<hr color="black">
-
- <div class="toph2">
-  <h2>About me</h2>
-   
-
-   <p>
-     Hi! I am Ishika Sharma, and I am currently learning UI/UX and graphic design. 
-     I have a passion for creativity and love designing digital experiences that are both beautiful and easy to use. 
-     As I go through this learning journey, I am gaining skills in UI/UX design, wireframing, prototyping, and graphic design using tools like Figma, Adobe XD, and Photoshop.
-
-     I enjoy exploring how design can solve problems and improve user experiences. 
-     Every day, I learn something new and apply my knowledge to real-world projects. My goal is to create designs that are simple, functional, and visually appealing.
-
-     In my free time, I love sketching, photography, and exploring new design trends. Traveling and experiencing different cultures also inspire my creativity.
-
-    I am excited to keep learning and growing in this field. If you would like to connect or collaborate, feel free to reach out!
-   </p>
-   </div>
-
-   <footer><B>Footer</B></footer>
-   
-   </body>
-   </html>
+        <div id="menu">
+           
+        <ul>
+        <li > <a href="index.html">Home</a></li>
+        <li><a href="Practice.html">Html work </a></li>
+         <li><a href="https://www.behance.net/ishikasharma42">Graphic Project</a></li>
+        
+        </ul>
+        
+        </div>
+        <hr color="#FAE6E7">
+        <br>
+        
+        <div class="card">
+            
+      
+        <img src="images/image my.jpg.png"class="pic" >
+        <H3> ISHIKA SHARMA</h3> 
+        <h4>UI/UX Designer </h4>
+        
+  
+        </div>
+        <div id="profile">
+            <p style="color:#F4BBC9; margin-top: 6%; font-family:"Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;font-size: 35px;
+            font-weight: 400;">Hi, Its Ishika Sharma</style></p>
+            <h3> I am a UI/UX Designer and Graphic Designer.
+            </h3>
+        </div>
+        <div id="main" > <h2><b>About me</b></h2></div>
+        <div class="toph2">
+           
+            <p>
+                Hi! I am Ishika Sharma, I will be 18 soon and I am currently pursuing a <u>Bachelor of arts from delhi university</u>, along with course in <u>ui-ux designing</u>.
+                I have a passion for creativity and love designing digital experiences that are both beautiful and easy to use. 
+                As I go through this learning journey, I am gaining skills in UI/UX design, wireframing, prototyping, and graphic design using tools like Figma, Adobe XD, and Photoshop.
+           
+                I enjoy exploring how design can solve problems and improve user experiences. 
+                Every day, I learn something new and apply my knowledge to real-world projects. My goal is to create designs that are simple, functional, and visually appealing.
+           
+                In my free time, I love sketching, photography, and exploring new design trends. If you would like to connect or collaborate, feel free to reach out!
+            </p>
+        </div>
+        
+        <div id="footer">
+            <h2 style="font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;"> More Details </h2>
+ <p style="text-decoration: underline;"> Contact On </p>
+ <p> email-id | Instagram </p>
+<p style font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: normal; > ishikasharma7131@gmail.com |  <a href="https://www.instagram.com/ishxka_art_?igsh=Mm5kcGxhanR0eGZi"> ishxka_art_ </a></p> 
+<p style="color: #F6A6BB"><b>Thank you for visiting...</b></style></p>  
+  
+           
+        </div>
+        
+</body>
+</html>
