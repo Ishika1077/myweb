@@ -51,6 +51,99 @@
         overflow: hidden;
         margin: auto;
     }
+
+     /*   Media Query  */
+
+ /* Extra small devices (phones, 600px and down) */
+
+ @media only screen and (max-width: 600px)
+ {
+       .bannerpic{
+        margin-left: -3px;
+        width: 25%;
+        height: 300px;
+        position: relative;
+        left: 0px;
+        animation: runbanner 15s infinite alternate;
+
+    }
+
+    #mask{
+        width: 90%;
+        height: 300px;
+       border-radius: 2%;
+        overflow: hidden;
+        margin: auto;
+    }
+ }
+ /*  Small devices (portrait tablets and large phones, 600px and up)  */
+
+ @media only screen and (min-width: 600px) 
+{
+    @keyframes runbanner
+    {
+    0%{left:0%}
+    10%{left:0%;}
+
+    20%{left:-25%;}
+    30%{left:-25%;}
+
+    40%{left:-50%;}
+    50%{left:-50%;}
+
+    60%{left:-75%;}
+    70%{left:-75%;}
+
+    80%{left:-100%;}
+    90%{left:-100%;}
+
+    }
+
+
+    .bannerpic{
+        margin-left: -3px;
+        width: 25%;
+        height: 300px;
+        position: relative;
+        left: 0px;
+        animation: runbanner 15s infinite alternate;
+
+    }
+
+    #mask{
+        width: 90%;
+        height: 300px;
+       border-radius: 2%;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+
+
+@media only screen and (min-width: 768px)
+ {
+    .bannerpic{
+       margin-left: -3px;
+        width: 19%;
+        height: 400px;
+        position: relative;
+        left: 0px;
+        animation: runbanner 15s infinite alternate;
+
+    }
+
+    #mask{
+        width: 50%;
+        height: 390px;
+       border-radius: 2%;
+        overflow: hidden;
+        margin: auto;
+    } 
+ }
+ }
+
+
 </style>
 <body>
     <div id="mask">
