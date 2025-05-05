@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Animation</title>
+</head>
+<style>
+@keyframes ani1
+{
+    10%{background-image:url(images/G1.gif);}
+    20%{background-image:url(images/G1.gif);}
+
+    30%{background-image:url(images/G2.gif);}
+    40%{background-image:url(images/G2.gif);}
+
+    50%{background-image:url(images/G3.gif);}
+    60%{background-image:url(images/G3.gif);}
+
+    70%{background-image:url(images/G4.gif);}
+    80%{background-image:url(images/G4.gif);}
+
+    90%{background-image:url(images/G5.gif);} 
+    100%{background-image:url(images/G5.gif);}
+}
+
+#banner{
+    width: 50%;
+    height: 400px;
+    box-shadow: 10px 10px 10px gray;
+    margin: auto;
+    background-image:url(images/G1.gif);
+    background-size: 100% 100%;
+    animation:ani1 12s infinite;
+}
+</style>
+<body>
+    <div id="banner">
+
+    </div>
+  
+</body>
+</html>

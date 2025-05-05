@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+</head>
+<style>
+    body
+    {background:#F7EEED;
+    size: cover;}
+    @keyframes runbanner
+    {
+    0%{left:0%}
+    10%{left:0%;}
+
+    20%{left:-19%;}
+    30%{left:-19%;}
+
+    40%{left:-38%;}
+    50%{left:-38%;}
+
+    60%{left:-57%;}
+    70%{left:-57%;}
+
+    80%{left:-77%;}
+    90%{left:-77%;}
+
+    }
+
+    #myheader{
+        width: 540%;
+        height: 400px;
+        background:pink;   
+         }
+
+    .bannerpic{
+       margin-left: -3px;
+        width: 19%;
+        height: 400px;
+        position: relative;
+        left: 0px;
+        animation: runbanner 15s infinite alternate;
+
+    }
+
+    #mask{
+        width: 50%;
+        height: 390px;
+       border-radius: 2%;
+        overflow: hidden;
+        margin: auto;
+    }
+</style>
+<body>
+    <div id="mask">
+
+        <div id="myheader">
+            <img src="images/F1.jpeg" class="bannerpic">
+            <img src="images/F2.jpg" class="bannerpic">
+            <img src="images/F3.jpg" class="bannerpic">
+            <img src="images/F4.avif" class="bannerpic">
+            <img src="images/F5.jpg" class="bannerpic">
+            <img src="images/F6.jpg" class="bannerpic">
+
+        </div>
+    </div>
+</body>
+</html>
