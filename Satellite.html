@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:#fff;
+  color:  #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.header {
+  background-color: #000;
+  padding: 0px 0;
+  border-bottom: 1px solid #333;
+  /position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  color: #fff;
+  margin: 20px;
+  float: left;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  float: right;
+  margin: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero {
+  background: url(images/p1.jpg) no-repeat center center/cover;
+  text-align: center;
+  padding: 250px 20px 90px;
+  position: relative;
+  color: #fff;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.hero img {
+  width: 100%;
+  display: none;
+}
+
+
+
+
+.cards {
+  display: flex;
+  /justify-content: space-around;
+  /flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.card {
+  /background-color: #111;
+  border-radius: 10px;
+  /overflow: hidden;
+  width: 30%;
+  min-width: 200px;
+  padding: 10px;
+  margin-bottom: 60px;
+}
+
+.card img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.card a {
+  /position: absolute;
+  bottom: 10px;
+  left: 10px;
+  
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.news-item {
+  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+  margin-bottom:60px ;
+}
+
+.news-item img {
+  background-color: rgba(0,0,0,2);
+  width: 90%;
+  /max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+.footer {
+  background-color: #111;
+  text-align: center;
+  padding: 40px 20px;
+  color: #ccc;
+}
+
+.footer-text {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social img {
+  width: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }}
+</style>
+<body>
+  
+  <header style="width: 100%;" class="header container">
+    <h1 class="logo">Astro Tech Innovation</h1>
+    <ul class="nav-links">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#footer">Contacts</a></li>
+    </ul>
+    <div style="clear: both;"></div>
+  
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Pioneering The Future of Space Technology</h2>
+      <p>Discover the innovations shaping our journey to the stars – satellites, rockets, AI and beyond</p>
+    </div>
+  </section>
+  </header>
+
+  
+  <section class="about container" id="about">
+    <h2>About Us</h2>
+    <p>
+      AstroTech Innovations is a visionary company at the forefront of space technology, dedicated to advancing humanity’s exploration of the cosmos. With a deep commitment to innovation and scientific progress, we specialize in the development of high-performance satellite systems, intelligent robotics, and advanced aerospace solutions. Our mission is to create technologies that not only support current space missions but also pave the way for sustainable interplanetary exploration in the future. By integrating cutting-edge artificial intelligence, data analytics, and engineering excellence, AstroTech Innovations is transforming how we observe Earth, communicate across vast distances, and explore new worlds.
+    </p>
+  </section>
+
+  
+  <section class="technologies container" id="technologies">
+    <h2>Technologies</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/Aech 1.jpg" alt="Satellite">
+        <a href="satellite web.html"> Satellite </a>
+      </div>
+      <div class="card">
+        <img src="images/Aech 3.jpg" alt="Launch Vehicles">
+        <a href="#">Launch Vehicles</a>
+      </div>
+      <div class="card">
+        <img src="images/Aech 2.jpg" alt="Space Station">
+        <a href="#">Space Station</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="news container" id="news">
+    <h2>News & Innovations</h2>
+    <div class="news-item">
+      <img src="images/p10.jpg" alt="Astronaut on Moon">
+      <p><small>3 min read</small></p>
+      <h4>Challenger, Columbia Tragedies A Reminder Not to Send Humans to Space, Says Former ATI Historian</h4>
+    </div>
+  </section>
+
+  
+  <section class="more-topics container">
+    <h2>More Topics from ATI</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/Mission.jpg" alt="Our Mission">
+        <a href="#">Our Mission</a>
+      </div>
+      <div class="card">
+        <img src="images/solar .jpg" alt="Solar System">
+        <a href="#">Solar System</a>
+      </div>
+      <div class="card">
+        <img src="images/earth.jpg" alt="Earth">
+        <a href="#">Earth</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer" id="footer">
+    <div class="container">
+      <h2>Astro Tech Innovation</h2>
+      <p class="footer-text">
+        AstroTech Innovations is dedicated to advancing the frontier of space technology. From next-gen satellites and reusable rockets to AI-driven planetary exploration, we are shaping humanity’s future in space.
+      </p>
+      <a href="#join" style="color: #f00; font-weight: bold;">Join Us →</a>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#news">News & Innovations</a></li>
+          <li><a href="#footer">Our Mission</a></li>
+          <li><a href="#footer">Earth</a></li>
+          <li><a href="#footer">Solar System</a></li>
+        </ul>
+      </div>
+
+      <div class="social">
+        <a href="#"><img src="images/icon 1.png" alt="Instagram"></a>
+        <a href="#"><img src="images/icon 2.png" alt="Facebook"></a>
+        <a href="#"><img src="images/icon3.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
