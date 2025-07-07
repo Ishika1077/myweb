@@ -1,245 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PhotoGallery</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery</title>
+  
 </head>
+
 <style>
-    @keyframes fadeout
-    {
-        from{opacity:0}
-        to{opacity:1}
-    }
-.header
-{
+
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #80979b ;
+  font-family: 'poppins', sans-serif;
+  color: white;
+  min-height: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Heading */
+.title {
     background: beige;
     color: black;
     padding: 10px;
     text-align:center;
     font-size: 40px;
- 
-    width: 10%;
+    width: 40%;
     margin: auto;
-    box-shadow: 8px 8px 30px cyan;
+    margin-bottom: 5%;
+    box-shadow: 0px 8px 20px cyan;
+    border-radius: 20px;
     transition: 0.50s;
     cursor: pointer;
     font-family: black;
-    }
-    .header:hover
-    {
-        box-shadow: 10px 10px 30px goldenrod;
-    }
-    html
-    {
-        animation:fadeout 4s;
-
-    }
-    .pic
-    {
-        width: 15%;
-        height: 210px;
-        margin: 60px;
-        border-radius: 200px;
-        box-shadow: 0px 10px 30px cyan;
-        transition: 0.50s;
-    }
-    .pic:hover
-    {
-        cursor:pointer;
-        transform:scale(1.20);
-        box-shadow: 0px 10px 30px goldenrod;
-        }
-
-
-
-        /*   Media Query  */
-
- /* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px)
- {
-   body{
-    text-align: center;
-   } 
-   .header{
-    
-    font-size: 25px;
-    border-radius:10px ;
-     width: 70%;
-     box-shadow: 8px 0px 20px cyan;
-	      
-	
-        
-   
-        
-    	}
-          
-
-		.pic
-			{
-			width:60%;
-			margin:20px;
-			border-radius:20px;
-            box-shadow: 0px 10px 20px cyan;
-			}
-
-
-
- }
-
-
- /*  Small devices (portrait tablets and large phones, 600px and up)  */
-
-@media only screen and (min-width: 600px) 
-{
-    body{
-        text-align: center;
-    
-    .header{
-  
-  font-size: 30px;
-  width: 50%;
-  box-shadow: 8px 0px 20px cyan;
-  border-radius: 10px;
- 
-   }
-		
-	
-
-                   .pic
-			{
-			width:50%;
-			margin:35px;
-			border-radius:10px;
-            box-shadow: 0px 10px 20px cyan;
-			}
-
-
-
-
+    animation: fadeIn 1.5s ease;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 150px;
+  gap: 15px;
+  animation: fadeIn 1.2s ease-out;
+}
 
+/* Grid item */
+.item {
+  overflow: hidden;
+  border-radius: 12px;
+  animation: glowFadeIn 1s ease-in;
+}
 
-@media only screen and (min-width: 768px)
- {
-    
-body {background-color: ;
+.item img {
+  width: 100%;
+  height: 100%;
+  border-style:groove;
+  border-width: 5px;
+  border-color: aliceblue;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  border-radius: 12px;
+}
 
-    .header
-   {
-    font-size: 40px;
-    border-radius:10px ;
-     width: 50%;
-     box-shadow: 8px 0px 20px cyan;
-	      
+.item:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
 
+/* layout */
+.item1  { grid-column: span 2; grid-row: span 2; }
+.item2  { grid-column: span 2; grid-row: span 2; }
+.item3  { grid-column: span 2; grid-row: span 2; }
+.item4  { grid-column: span 1; grid-row: span 2; }
+.item5  { grid-column: span 2; grid-row: span 2; }
+.item6  { grid-column: span 3; grid-row: span 2; }
+.item7  { grid-column: span 3; grid-row: span 2; }
+.item8  { grid-column: span 3; grid-row: span 2; }
+.item9  { grid-column: span 2; grid-row: span 2; }
+.item10 { grid-column: span 2; grid-row: span 2; }
+.item11 { grid-column: span 1; grid-row: span 2; }
 
-   }
-   .pic
-   {
-        width: 30%;
-        border-radius: 20px;
-        margin: 60px;
-        box-shadow: 0px 10px 30px cyan;
-   
-    }
-
-   
-
-
-
- }
-
-
- /* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px)
- {
-    body{background-color:  ;
-    
-        .header
-   {
-    font-size: 40px;
-    border-radius:10px ;
-    width: 60%;
-    box-shadow: 8px 8px 30px cyan;
-   }
-	      
-    .pic
-    {
-        width: 20%;
-      
-        margin: 60px;
-        border-radius: 200px;
-        box-shadow: 0px 10px 30px cyan;
-        transition: 0.50s;
-    }
-
-          
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
- }
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
 
+  .title {
+    font-size: 2rem;
+  }
+}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px)
- {
-    body{background-color:;}
-        header
-	{
-	 font-size:60px;
-	}
-
-		.pic
-		{
-			width: 25%;
-       
-        margin: 60px;
-        border-radius: 150px;
-        box-shadow: 0px 10px 30px cyan;
-		}
-
-
- }
 
 </style>
-<body bgcolor="black">
-<header class="header">
-   <b> Nature's Beauty</b>
-</header> 
-<a href="i1.html">
-<img src="images/i1.jpg"class="pic">
-
-<a href="i2.html">
-<img src="images/i2.jpg"class="pic">
-
-<a href="i3.html">
-<img src="images/i3.jpeg"class="pic">
-
-<a href="i4.html">
-<img src="images/i4.jpg"class="pic">
-
-<a href="i5.html">
-<img src="images/i5.jpeg"class="pic">
-
-<a href="i6.html">
-<img src="images/i6.jpg"class="pic">
-
-<a href="i7.html">
-<img src="images/i7.jpg"class="pic">
-
-<a href="i8.html">
-<img src="images/i8.jpeg"class="pic">
-</a>  
+<body>
+  <div class="container">
+    <h1 class="title">Photo Gallery</h1>
+    
+      <div class="gallery">
+      <div class="item item1"><img src="images/i1.jpg" alt=""></div>
+      <div class="item item2"><img src="images/i2.jpg" alt=""></div>
+      <div class="item item3"><img src="images/i3.jpeg" alt=""></div>
+      <div class="item item4"><img src="images/i5.jpeg" alt=""></div>
+      <div class="item item5"><img src="images/i12.jpg" alt=""></div>
+      <div class="item item6"><img src="images/i6.jpg" alt=""></div>
+      <div class="item item7"><img src="images/i7.jpg" alt=""></div>
+      <div class="item item8"><img src="images/i8.jpeg" alt=""></div>
+      <div class="item item9"><img src="images/i9.jpg" alt=""></div>
+      <div class="item item10"><img src="images/i10.webp" alt=""></div>
+      <div class="item item11"><img src="images/i11.jpg" alt=""></div>
+      
+</div>
 </body>
 </html>
-
-
-    
