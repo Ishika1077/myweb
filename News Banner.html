@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Banner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .News-container {
+      width: 100%;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      overflow: hidden;
+      position: relative;
+      border-top: 4px solid #e91e63;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .News-title {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #e91e63;
+      color: white;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    .Main {
+      margin-left: 150px;
+      height: 40px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .News-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 25s linear infinite;
+      font-size: 16px;
+      line-height: 40px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .News-item {
+      display: inline-block;
+      padding: 0 40px;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .News-item:last-child {
+      border-right: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .News-title {
+        padding: 0 10px;
+        font-size: 14px;
+      }
+      .News-content {
+        font-size: 14px;
+      }
+      .News-item {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="News-container">
+    <div class="News-title">Breaking News</div>
+    <div class="Main">
+      <div class="News-content">
+        <span class="News-item">Global markets rally as inflation slows down.</span>
+        <span class="News-item">Tech giant unveils its latest AI product.</span>
+        <span class="News-item">Sports: Championship final set for next Sunday.</span>
+        <span class="News-item">Weather Alert: Heavy rain expected in the northeast.</span>
+        <span class="News-item">Elections 2025: Key states to watch this week.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
