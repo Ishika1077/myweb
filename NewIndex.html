@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  background: #f9f5fc;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #9b59b6;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  border-bottom: 2px solid #f1c40f;
+  color: #222;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 5%;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+}
+
+.hero-content h5 {
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: .80px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.hero-content h1 span {
+  font-weight: bold;
+}
+
+.hero-content p {
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #9b59b6;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #8e44ad;
+}
+
+.btn.secondary {
+  border: 2px solid #9b59b6;
+  color: #9b59b6;
+  background: transparent;
+}
+
+
+.btn.secondary:hover {
+  background: #9b59b6;
+  color: #fff;
+}
+
+/* Hero Image */
+
+img {
+  width: 00px;
+  height: 300px;
+}
+
+.hero-image {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border: #8e44ad;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+   .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+
+
+
+</style>
+<body>
+    <header>
+    <div class="logo">Ishika Sharma</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h5>HELLO</h5>
+      <h1>I’m <span>Ishika Sharma</span> 
+        <span>I am a UI/UX Designer and Graphic Designer.</span></h1>
+      <p>
+       Hi! I am Ishika Sharma, I am currently pursuing a <u>Bachelor of arts from delhi university</u>, along with course in <u>ui-ux designing</u>.
+                I have a passion for creativity and love designing digital experiences that are both beautiful and easy to use. 
+                As I go through this learning journey, I am gaining skills in UI/UX design, wireframing, prototyping, and graphic design using tools like Figma, Adobe XD, and Photoshop.
+           
+                I enjoy exploring how design can solve problems and improve user experiences. 
+                Every day, I learn something new and apply my knowledge to real-world projects. My goal is to create designs that are simple, functional, and visually appealing.
+           
+                In my free time, I love sketching, photography, and exploring new design trends. If you would like to connect or collaborate, feel free to reach out!
+      </p>
+      
+    </div>
+
+    <div class="hero-image">
+      <img src="images/image my.jpg.png" >
+    </div>
+  </section>
+
+    
+</body>
+</html>
