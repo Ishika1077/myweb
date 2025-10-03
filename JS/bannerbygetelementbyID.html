@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(241, 222, 241);
+    }
+
+    h1{
+        width: 40%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 50%;
+        text-align: center;
+        font-size: xx-large;
+        
+    }
+    #banner{
+        width:70%;
+        height:500px;
+        margin:auto;
+        box-shadow:5px 5px 5px lightsteelblue;
+    }
+
+    #pic{
+        width:100%;
+        height:100%;
+    }
+</style>
+<body>
+    <!---
+    <h1>Creating Animated banner by GetElement() in Js</h1>
+
+    -->
+    <h1> Animated Banner </h1>
+
+    <div id="banner">
+        <img id="pic" src="Pic/p1.jpg">
+
+     <script>
+        var p = document.getElementById("pic")
+        var c = 1
+
+        function changepic()
+        {
+            p.src="Pic/p"+c+".jpg"
+
+           if(c<6)
+        {
+            c++
+        }
+        else
+        {
+            c=1
+        }
+
+        document.title = c
+        }
+
+        setInterval("changepic()",2000)
+
+     </script>   
+     
+</body>
+</html>
