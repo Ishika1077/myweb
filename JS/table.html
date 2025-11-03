@@ -6,111 +6,43 @@
     <title>Document</title>
 </head>
 <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    body{
+        margin:0px;
+        padding:0px;
+        background: url(Pic/pencil123.jpg),no-repeat center center/cover;
+        text-align: center;
     }
 
-    body {
-      background: url(Pic/lion.png),no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100;
-      position: relative;
+    #main{
+        text-align: center;
+        color: aliceblue;
+        font-family: Arial black;
+        font-size: 22px;
+        background: rgba(1, 13, 27,0.6) ;
+        margin-top: 1px;
+        padding: 10px;
     }
-
-    /* Header */
-    h1 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #1a2434;
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    h1 img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    /* Table container */
-    .table-box {
-      background: white;
-      padding: 40px 60px;
-      border-radius: 20px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .table-box p {
-      font-size: 22px;
-      font-weight: 600;
-      color: #1a2434;
-      margin: 12px 0;
-    }
-
-    /* Bottom navigation */
-    .bottom-nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .bottom-nav img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .nav-btn {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      background: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .nav-btn:hover {
-      transform: scale(1.1);
-    }
-
-    .nav-btn svg {
-      width: 24px;
-      height: 24px;
-      stroke: #1a2434;
-      stroke-width: 2;
-    }
-  
 </style>
 <body>
-    
-   <script>
+  <button style="margin-top: 20px;"onclick="createtable()">Click To Create a Table</button>  
 
-  var n = prompt("Enter a Number to Create Table...","2")
-  document.write("<h1>Table of "+n+"</h1>")
-  for(var i = 1;i<=10;i=i+1){
-    document.write("<h1>"+n+" * "+i+" = "+n*i+"</h1>")
+  <div id="main">
+    <script>
+        var data=""
+        var d = document.getElementById("main")
 
+        function createtable(){
+            var n = prompt("Enter a Number to Create Table...","2")
+            data="Table of "+n+"</br/>"
 
-  }
+            for(var i = 1;i<=10;i=i+1)
+        {
+            data+= "<h4>"+n+" * "+1+" = "+n*i+"</h4>"
+        }
 
-   </script> 
+        d.innerHTML = data
+        }
+    </script>
+  </div>
 </body>
 </html>
