@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    .mystyle{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        cursor:pointer;
+        border-radius: 50px;
+    }
+</style>
+<body>
+    <h1 style="margin-left: 10px;">While Loop</h1>
+    <script>
+        var r,g,b,mycolor
+
+        var a = 1
+        while(a<=20)
+    {
+        r= Math.round(Math.random()*255)
+        g= Math.round(Math.random()*255)
+        b= Math.round(Math.random()*255)
+        mycolor="rgb("+r+","+g+","+b+")"
+
+
+        document.write("<button onclick='show(this)'style='background:"+mycolor+"'class='mystyle'>Click</button>")
+        if((a==5||(a==10)||a==15))
+       {
+        document.write("<br/>")
+       }
+
+       function show(t)
+       {
+        document.body.style.background = t.style.background
+       }
+       a++
+
+    }
+    </script>
+
+</body>
+</html>
