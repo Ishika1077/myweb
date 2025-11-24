@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+        overflow: hidden;
+    }
+</style>
+<body>
+    <img src="Pic/green.jpg" id="back">
+    <script>
+        var bird= document.createElement("img")
+        document.body.appendChild(bird)
+        var back = document.getElementById("back")
+        back.style="position:absolute;left:0px;top:-100px"
+
+
+        bird.src="Pic/b1.gif"
+        bird.style="position:absolute;width:200px;left:0px;top:0px;"
+        var k
+        var l = 0
+        var t = 0
+        var b1 = 0
+
+        function f1(e)
+        {
+            k = e.key
+             switch(k)
+             {
+                case "ArrowRight" :
+                if(l<window.innerWidth-200)
+             {
+                l+=10
+                b1-=10
+             }
+
+             bird.style.left = l+"px"
+              bird.style.transform = "rotateY(0deg)"
+              back.style.left=b1+"px"
+              break;
+
+
+              case "ArrowLeft":
+              if(l>0)
+             {
+                l-=10
+                b1+=10
+             }
+             bird.style.left = l+"px"
+             bird.style.transform = "rotateY(180deg)"
+             back.style.left=b1+"px"
+             break;
+
+
+             case "ArrowDown":
+
+             if(t<window.innerHeight-150)
+             {
+               t=t+5
+             }
+             bird.style.top = t+"px"
+             break;
+
+
+             case "ArrowUp":
+                if(t>0)
+             {
+                t=t-5
+             }
+             bird.style.top = t+"px"
+
+             break;
+              
+             }
+
+             document.title = e.key
+        }
+
+
+        document.addEventListener("keydown",f1)
+    </script>
+</body>
+</html>
