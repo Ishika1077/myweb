@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="padding:10px;position:absolute;color:white;background:gray;box-shadow:10px 10px; top:0px">Draw</h1>
+    <canvas id="can"></canvas>
+    <script>
+        var can = document.getElementById("can")
+        var c = can.getContext("2d");
+        w = window.innerWidth;
+        h = window.innerHeight;
+        can.width = w;
+        can.height = h;
+        var brushsize=10
+        var drawmode = false
+        var erasemode = false
+
+        function draw(e)
+        {
+            if(drawmode)
+        {
+            c.beginPath();
+            c.arc(e.pageX,e.pageY,brushsize,0,2*Math.PI);
+            c.fillStyle="yellow"
+            c.fill()
+        }
+
+            if(erasemode)
+        {
+             c.beginPath();
+            c.arc(e.pageX,e.pageY,brushsize,0,2*Math.PI);
+            c.fillStyle="white"
+            c.fill()
+        }
+        }
+
+        function setmode()
+        {
+            drawmode=(!drawmode)?true:false
+            document.title = drawmode
+        }
+
+        function setbrushsize(e)
+        {
+
+        
+            k = e.key
+
+                if((k=="+")&&(brushsize<50))
+                   {
+                    brushsize+=2
+                    document.title = brushsize
+                   }
+                   if((k=="-")&&(brushsize>5))
+                   {
+                    brushsize-=2
+                    document.title = brushsize
+                   }
+
+
+                   if(k=="e")
+                   {
+                    erasemode = (!erasemode)?true:false
+                   }
+
+                   if(k==" ")
+                   {
+                    c.clearRect(0,0,w,h)
+                   }
+        }
+
+        document.addEventListener("click",setmode)
+        document.addEventListener("mousemove",draw)
+        document.addEventListener("keydown",setbrushsize)
+
+
+        document.title = drawmode
+    </script>
+</body>
+</html>
