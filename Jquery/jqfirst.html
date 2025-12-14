@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    
+
+    #pic
+    {
+        width:100%;
+        box-shadow: 10px 10px 10px gray;
+
+    }
+
+    #main
+    {
+        width:30%;
+        margin:auto;
+        text-align: center;
+    }
+
+    .box
+    {
+        position:fixed;
+        top:370px;
+        width:100%;
+        text-align: center;
+    }
+
+   
+</style>
+<body>
+<h1 style="text-align: center;padding: 10px;">Working with Jquery Show hide and event handling</h1>
+<div id="main">
+    <img id="pic" src="images/i4.img.jpg">
+    <p Working with Jquery Show hide and event handling> </p>
+</div>
+
+<div class="box">
+    <button id="b1">Show</button>  <button id="b2">Hide</button>
+    <button id="b3">Toggle</button>
+</div>
+ 
+<script>
+    $(document).ready(function()
+    {
+        $("#b2").click(function()
+    {
+        $("#pic").hide(2000)
+    })
+
+    $("#b1").click(function()
+{
+    $("#pic").show(3000,darkmode)
+})
+
+$("#b3").click(function()
+{
+    $("#pic").toggle(3000)
+})
+   
+   
+   })
+
+   function darkmode()
+   {
+    document.bgColor = "black"
+    
+
+   }
+</script>
+
+</body>
+</html>
