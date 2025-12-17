@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    p{
+        padding:40px;
+        font-size:22px;
+        text-align:justify;
+    
+    }
+    #main{
+        width:40%;
+        margin: auto;
+    }
+
+    div{
+        cursor: pointer;
+       
+    }
+</style>
+<body>
+    <h1>Using Jquery Slide Function</h1>
+    <div id="main">
+
+   <div>
+    <h1 id="about" style="box-shadow: 10px 10px 10px gray;border-radius: 100px;color: white;
+    background: black;width:100%;padding: 20px;margin-bottom:-20px;">About us</h1>
+    <p id="row1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatibus quisquam rem deleniti atque, eligendi velit unde vel reiciendis fugiat nemo quibusdam blanditiis odio voluptas neque, culpa officia expedita pariatur! 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, culpa vitae laudantium soluta recusandae placeat maxime! Id, animi illum. Cupiditate unde velit culpa officiis corporis esse possimus architecto doloremque enim.
+
+    </p>
+     </div>
+     <div>
+        <h1 id="policy" style="box-shadow: 10px 10px 10px gray;border-radius: 100px;color: white;
+    background: black;width:100%;padding: 20px;margin-bottom:-20px;">Policy </h1>
+
+     <p id="row2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatibus quisquam rem deleniti atque, eligendi velit unde vel reiciendis fugiat nemo quibusdam blanditiis odio voluptas neque, culpa officia expedita pariatur! 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, culpa vitae laudantium soluta recusandae placeat maxime! Id, animi illum. Cupiditate unde velit culpa officiis corporis esse possimus architecto doloremque enim.
+
+    </p>
+     </div>
+
+      <div>
+        <h1 id="photo" style="box-shadow: 10px 10px 10px gray; border-radius: 100px;color: white;
+    background: black;width:100%;padding: 20px;margin-bottom:-20px;">Photo</h1>
+
+     <p id="row3">
+       <img src="images/i4.img.jpg" width="100%">
+    </p>
+     </div>
+    </div>
+
+    <script>
+        $("#row1").slideUp()
+         $("#row2").slideUp()
+          $("#row3").slideUp()
+
+          $(document).ready(function()
+        {
+            $("#about").click(function()
+        {
+           $("#row1").slideToggle(1000)
+
+        })
+            $("#policy").click(function()
+        {
+            $("#row2").slideToggle(1000)
+
+        })
+
+             $("#photo").click(function()
+        {
+            $("#row3").slideToggle(1000)
+
+        })
+
+
+        
+
+        })
+
+        function myaction()
+        {
+            document.bgColor = "gray"
+        }
+
+    </script>
+</body>
+</html>
