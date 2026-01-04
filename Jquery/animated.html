@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-image: url(images/bubbles.gif);
+    }
+    #logo{
+        background:white;
+        color:black;
+        padding:20px;
+       border-radius: 10px;
+        font-size: 50px;
+        font-family:sans-serif;
+        box-shadow: 10px 10px 40px rgb(255, 252, 252);
+        width: 380px;
+        position: absolute;
+        left: -500px;
+        top: 0px;
+        text-align: center;
+        margin: auto;
+    }
+</style>
+<body>
+    <div id="logo">
+        <h1>B M W</h1>
+    </div>
+    <script>
+        $(document).ready(function()
+    {
+        $("#logo").animate({left:"500px"},1000).delay(1000).animate({top:"250px"},1000)
+        $("#logo").animate({width:"+=130px"},1000).delay(1000).animate({fontSize:"+=20px"},1000).delay(1000).animate({fontSize:"-=20px"},1000).delay(1000).delay(1000,ch).animate({left:"-600px"},2000).delay(1000).delay(1000,st).animate({width:"-=130px"},1000).animate({left:"500px",top:"15px"},1000)
+    })
+
+    function ch(t)
+    {
+        var b = document.getElementById("logo")
+        b.innerHTML="<img src='images/black bmw.png' style='width:480px'>"
+        
+        
+        $(t).animate({left:"-600px"},10000)
+    }
+
+    function st(i)
+    {
+         var l = document.getElementById("logo")
+        l.innerHTML="<img src='images/bmw.gif' style='width:370px'>"
+       
+        
+        $(i).animate({width:"-=130px"},1000).animate({left:"500px",top:"15px"},1000)
+    }
+    </script>
+</body>
+</html>
