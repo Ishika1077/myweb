@@ -10,11 +10,47 @@
 
 </head>
 <style>
-     body{
-        background-color: F7EEED;
+      body{
+       
         width: 100%;
         height: 100%;
     }
+
+     header {
+     
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav {
+      
+      width: 70%;
+      margin:auto;
+      text-align: center;
+      padding: 10px 0;
+      
+    }
+
+    nav a 
+    {
+        background-color: black;
+      color: white;
+      margin: 20px 0px;
+      
+      padding: 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: rgb(254, 253, 253);
+       
+    }
+
     
 h1{
     font-family: "Poppins", sans-serif;
@@ -183,6 +219,51 @@ text-decoration: underline;
 }
 
 
+
+     #main
+{
+
+width:40%;
+text-align: center;
+margin:auto;
+margin-left: 28%;
+margin-top:40px;
+color:#0077b6;
+}
+
+
+#main ol li 
+{
+
+width:30%px;
+text-align:center;
+padding:10px;
+cursor:pointer;
+transition:0.50s;
+list-style:none;
+border:1px black solid;
+border-radius:10px;
+margin-left:30px;
+color:#0077b6;
+}
+
+#main ol li :link{
+
+    color:#0077b6;
+}
+#main ol li :visited{
+    color:black;
+   
+}
+#main ol li :hover
+{
+color:rgb(217, 233, 243);
+transform:scale(1.20);
+text-decoration: underline;
+
+}
+
+
  /*   Media Query  */
 
  /* Extra small devices (phones, 600px and down) */
@@ -202,7 +283,22 @@ text-decoration: underline;
 
 </style>
 <body>
-    <h1>HTML Work</h1>
+
+<header>
+    <h1> Practice Work</h1>
+  </header>
+
+
+    <div class="background"></div>
+  <nav>
+    <a href="index.html">Home</a>
+  
+    <a href="#html">HTML</a>
+    <a href="#java">JavaScript</a>
+    <a href="#jq">Jquery</a>
+    <a href="#boot">Bootstrap</a>
+     </nav>
+    <h1 id="html">HTML </h1>
     <div id="title">
         <ol>
        <li> <a href="index.html">Home</a></li>
@@ -241,7 +337,7 @@ text-decoration: underline;
 
        </ol> 
     </div>
-        <h1>Javascript Work</h1>
+        <h1 id="java">Javascript </h1>
         <div id ="topic">
            <ol>
        <li> <a href="JS/First.html">Background Color</a></li>
@@ -289,7 +385,7 @@ text-decoration: underline;
     </div>
 
 
-    <h1>Jquery Work</h1>
+    <h1 id="jq">Jquery </h1>
         <div id ="part">
            <ol>
        <li> <a href="Jquery/jqfirst.html">Show/Hide in Jquery</a></li>
@@ -309,10 +405,22 @@ text-decoration: underline;
                 <li> <a href="Jquery/animated.html"> Animate Effect </a></li>
                
        <br>
+
+
+
+
+
+               <h1 id="boot">Bootstrap</h1>
+        <div id ="main">
+           <ol>
+       <li> <a href="Bootstrap/Index.html">Text Setting</a></li>
+       <br>
+
                
     
 </body>
 </html>
+
 
 
 
