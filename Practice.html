@@ -1,470 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Practice</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Dashboard</title>
 
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-      body{
-       
-        width: 100%;
-        height: 100%;
-    }
 
-     header {
-     
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    nav {
-      
-      width: 70%;
-      margin:auto;
-      text-align: center;
-      padding: 10px 0;
-      
-    }
-
-    nav a 
-    {
-        background-color: black;
-      color: white;
-      margin: 20px 0px;
-      
-      padding: 10px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-      color: rgb(254, 253, 253);
-       
-    }
-
-    
-h1{
+body{
     font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    background:#0f0f14;
+    margin:0;
+}
+
+/* ================= HEADER ================= */
+
+.hero{
+    background: linear-gradient(135deg,#c97a8c,#d6abb4,#dcc4c9);
+    color:#0f0f14;
+    padding:80px 20px 100px;
     text-align:center;
-font-size:50px;
-width:400px;
-margin:auto;
-box-shadow:0px 10px 30px rgb(226, 237, 247);
-color:#F7EEED;
-background-color:#F6A6BB;
-border-radius: 10px;
-margin-top: 3%;
-
-
-}
-#title
-{
-
-width:40%;
-text-align: center;
-margin:auto;
-margin-left: 28%;
-margin-top:40px;
-color:#0077b6;
+    position:relative;
 }
 
-
-#title ol li 
-{
-
-width:30%px;
-text-align:center;
-padding:10px;
-cursor:pointer;
-transition:0.50s;
-list-style:none;
-border:1px black solid;
-border-radius:10px;
-margin-left:30px;
-color:#0077b6;
+.hero h1{
+    font-size:55px;
+    margin:0;
+    font-weight:700;
 }
 
-#title ol li :link{
-
-    color:#0077b6;
-}
-#title ol li :visited{
-    color:black;
-   
-}
-#title ol li :hover
-{
-color:rgb(217, 233, 243);
-transform:scale(1.20);
-text-decoration: underline;
-
+.hero p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
 }
 
-h1{
-    font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/* wave effect */
+
+.hero::after{
+    content:"";
+    position:absolute;
+    bottom:-1px;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#0f0f14;
+    border-top-left-radius:100% 80px;
+    border-top-right-radius:100% 80px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#efe0e3;
+    width:90%;
+    margin:auto;
+    margin-top:-40px;
+    padding:15px 25px;
+    border-radius:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    position:sticky;
+    top:15px;
+    z-index:100;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#0f0f14;
+    font-weight:600;
+    padding:10px 18px;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    background:#c97a8c;
+    color:white;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    width:90%;
+    margin:auto;
+    margin-top:70px;
+    margin-bottom:60px;
+}
+
+.section h2{
     text-align:center;
-font-size:50px;
-width:600px;
-margin:auto;
-box-shadow:0px 10px 30px rgb(226, 237, 247);
-color:#F7EEED;
-background-color:#F6A6BB;
-border-radius: 10px;
-margin-top: 3%;
+    color:#c97a8c;
+    font-size:36px;
+    margin-bottom:40px;
+}
 
+/* ================= CARD GRID ================= */
 
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:28px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#222;
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+    transition:0.35s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
 }
 
 
-
-    #topic
+.pic
 {
+    width: 250px;
+}
+/* ================= THUMB ================= */
 
-width:40%;
-text-align: center;
-margin:auto;
-margin-left: 28%;
-margin-top:40px;
-color:#0077b6;
+.thumb{
+    height:150px;
+    background: linear-gradient(135deg,#0077b6,#00b4d8);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:28px;
+    font-weight:700;
 }
 
+/* ================= CARD TEXT ================= */
 
-#topic ol li 
-{
-
-width:30%px;
-text-align:center;
-padding:10px;
-cursor:pointer;
-transition:0.50s;
-list-style:none;
-border:1px black solid;
-border-radius:10px;
-margin-left:30px;
-color:#0077b6;
+.card p{
+    padding:18px;
+    text-align:center;
+    font-weight:600;
+    font-size:16px;
 }
 
-#topic ol li :link{
+/* ================= MOBILE ================= */
 
-    color:#0077b6;
-}
-#topic ol li :visited{
-    color:black;
-   
-}
-#topic ol li :hover
-{
-color:rgb(217, 233, 243);
-transform:scale(1.20);
-text-decoration: underline;
+@media(max-width:600px){
 
+.hero h1{
+    font-size:38px;
 }
 
-
-
-      #part
-{
-
-width:40%;
-text-align: center;
-margin:auto;
-margin-left: 28%;
-margin-top:40px;
-color:#0077b6;
+.navbar{
+    flex-wrap:wrap;
+    gap:10px;
 }
 
-
-#part ol li 
-{
-
-width:30%px;
-text-align:center;
-padding:10px;
-cursor:pointer;
-transition:0.50s;
-list-style:none;
-border:1px black solid;
-border-radius:10px;
-margin-left:30px;
-color:#0077b6;
+.section h2{
+    font-size:28px;
 }
 
-#part ol li :link{
-
-    color:#0077b6;
 }
-#part ol li :visited{
-    color:black;
-   
-}
-#part ol li :hover
-{
-color:rgb(217, 233, 243);
-transform:scale(1.20);
-text-decoration: underline;
-
-}
-
-
-
-     #main
-{
-
-width:40%;
-text-align: center;
-margin:auto;
-margin-left: 28%;
-margin-top:40px;
-color:#0077b6;
-}
-
-
-#main ol li 
-{
-
-width:30%px;
-text-align:center;
-padding:10px;
-cursor:pointer;
-transition:0.50s;
-list-style:none;
-border:1px black solid;
-border-radius:10px;
-margin-left:30px;
-color:#0077b6;
-}
-
-#main ol li :link{
-
-    color:#0077b6;
-}
-#main ol li :visited{
-    color:black;
-   
-}
-#main ol li :hover
-{
-color:rgb(217, 233, 243);
-transform:scale(1.20);
-text-decoration: underline;
-
-}
-
-
- /*   Media Query  */
-
- /* Extra small devices (phones, 600px and down) */
-
- @media only screen and (max-width: 600px)
- {
-
-    h1{
-        width: 300px;
-        font-size: 40px;
-        margin-top: 5%;
-        
-    }
- }
-
-
 
 </style>
+</head>
+
 <body>
 
-<header>
-    <h1> Practice Work</h1>
-  </header>
+<!-- ===== HERO HEADER ===== -->
 
+<div class="hero">
+<h1>My Practice Work</h1>
+<p>HTML • JavaScript • jQuery • Bootstrap Projects</p>
+</div>
 
-    <div class="background"></div>
-  <nav>
-    <a href="index.html">Home</a>
-  
-    <a href="#html">HTML</a>
-    <a href="#java">JavaScript</a>
-    <a href="#jq">Jquery</a>
-    <a href="#boot">Bootstrap</a>
-     </nav>
-    <h1 id="html">HTML </h1>
-    <div id="title">
-        <ol>
-       <li> <a href="index.html">Home</a></li>
-       <br>
-        
-       <li><a href="PhotoGallery.html">Photo web</a></li>
-      <br>
-       <li><a href="menu2.html">Menu</a></li>
-      <br>
-        
-        <li> <a href="list in html.html">list</a></li>
-        <br>
-        <li><a href="table.html">Table</a></li>
-        <br>
-        <li><a href="Div1.html">Div</a></li>
-        <br>
-        <li><a href="Login Form.html">Login Form</a></li>
-        <br>
-        <li><a href="registration.html">Registration Form</a></li>
-        <br>
-        <li><a href="menu div.html">Menu Animation</a></li>
-        <br>
-        <li><a href="Slider.html">Slider</a></li>
-        <br>
-        <li><a href="Banner.html">Banner Animation</a></li>
-        <br>
-        <li><a href="Media.html">Media in HTML</a></li>
-        <br>
-        <li><a href="News Banner.html">News Banner</a></li>
-        <br>
-        <li><a href="Drawing.html">Vector Icons</a></li>
+<!-- ===== NAVBAR ===== -->
 
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#html">HTML</a>
+<a href="#js">JavaScript</a>
+<a href="#jq">Jquery</a>
+<a href="#boot">Bootstrap</a>
+</div>
 
+<!-- ================= HTML ================= -->
 
+<div class="section" id="html">
+<h2>HTML Projects</h2>
 
+<div class="grid">
 
-       </ol> 
-    </div>
-        <h1 id="java">Javascript </h1>
-        <div id ="topic">
-           <ol>
-       <li> <a href="JS/First.html">Background Color</a></li>
-       <br>
-        
-       <li><a href="JS/JS3.html">Create Element</a></li>
-      <br>
-       <li><a href="JS/bannerbygetelementbyID.html">Get Element by ID</a></li>
-      <br>  
-                <li><a href="JS/Bannerbutton.html">Bannner</a></li>
-      <br>  
-                 <li><a href="JS/Banner12.html">Bannner with Animation</a></li>
-      <br>  
-                 <li><a href="JS/Banneranimation.html">Disney Bannner</a></li>
-      <br>  
-                   <li><a href="JS/arraytheory.html">Array Theory</a></li>
-               
-      <br>  
+<a class="card" href="index.html"><div class="thumb">
+<img class="pic" src="image gallery/intro.png">
+</div>
+<p>Home</p></a>
+<a class="card" href="PhotoGallery.html"><div class="thumb">
+    <img class="pic" src="image gallery/photo gallery.png">
+</div>
+<p>Photo Web</p></a>
+<a class="card" href="menu2.html"><div class="thumb">
+     <img class="pic" src="image gallery/menu.png">
+</div><p>Menu</p></a>
+<a class="card" href="list in html.html"><div class="thumb">
+     <img class="pic" src="image gallery/list.png">
+</div><p>HTML List</p></a>
+<a class="card" href="table.html"><div class="thumb">
+    <img class="pic" src="image gallery/table.png">
+</div><p>Table</p></a>
+<a class="card" href="Div1.html"><div class="thumb">
+      <img class="pic" src="image gallery/div.png">
+</div><p>Div Layout</p></a>
+<a class="card" href="Login Form.html"><div class="thumb">
+      <img class="pic" src="image gallery/login.png">
+</div><p>Login Form</p></a>
+<a class="card" href="registration.html"><div class="thumb">
+    <img class="pic" src="image gallery/register.png">
+</div><p>Registration</p></a>
+<a class="card" href="menu div.html"><div class="thumb">
+   <img class="pic" src="image gallery/menu anim.png">
+</div><p>Menu Animation</p></a>
+<a class="card" href="Slider.html"><div class="thumb">
+    <img class="pic" src="image gallery/baner slider.png">
+</div><p>Slider</p></a>
+<a class="card" href="Banner.html"><div class="thumb">
+ <img class="pic" src="image gallery/banner anim.png">
+</div><p>Banner Animation</p></a>
+<a class="card" href="Media.html"><div class="thumb">
+   <img class="pic" src="image gallery/media.png">
+</div><p>HTML Media</p></a>
+<a class="card" href="News Banner.html"><div class="thumb">
+    <img class="pic" src="image gallery/nwes banner.png">
+</div><p>News Banner</p></a>
+<a class="card" href="Drawing.html"><div class="thumb">
+  <img class="pic" src="image gallery/vector.png">
+</div><p>Vector Icons</p></a>
 
-                   <li><a href="JS/Array.html">Change BgColor with Array</a></li>
-      <br>  
+</div>
+</div>
 
-                <li><a href="JS/AgeCalculatormain.html">Age Calculator</a></li>
-      <br>  
+<!-- ================= JAVASCRIPT ================= -->
 
-                 <li><a href="JS/table.html">Table</a></li>
-      <br>  
-                <li><a href="JS/loop.html">Photo Show</a></li>
-      <br>  
+<div class="section" id="js">
+<h2>JavaScript Projects</h2>
 
-               <li><a href="JS/colorpallate.html">Color Palette</a></li>
-      <br>  
-                <li><a href="JS/popup.html">Amazon Sale</a></li>
-      <br>  
+<div class="grid">
 
-               <li><a href="JS/switch.html">Image of the Day </a></li>
-      <br>  
-               <li><a href="JS/keyboard.html">Keyboard </a></li>
-      <br>  
-                <li><a href="JS/Drawing.html">JS Drawing </a></li>
-      <br>  
-     </ol>
-        
-        
-    </div>
+<a class="card" href="JS/First.html"><div class="thumb">
+    <img class="pic" src="image gallery/bg.png">
+</div><p>Background Color</p></a>
+<a class="card" href="JS/JS3.html"><div class="thumb">
+     <img class="pic" src="image gallery/create.png">
+</div><p>Create Element</p></a>
+<a class="card" href="JS/bannerbygetelementbyID.html"><div class="thumb">
+     <img class="pic" src="image gallery/get.png">
+</div><p>Get Element by ID</p></a>
+<a class="card" href="JS/Bannerbutton.html"><div class="thumb">
+     <img class="pic" src="image gallery/banner.png">
+</div><p>Banner Button</p></a>
+<a class="card" href="JS/Array.html"><div class="thumb">
+     <img class="pic" src="image gallery/Array.png">
+</div><p>Color Array</p></a>
+<a class="card" href="JS/AgeCalculatormain.html"><div class="thumb">
+     <img class="pic" src="image gallery/calculator.png">
+</div><p>Age Calculator</p></a>
+<a class="card" href="JS/keyboard.html"><div class="thumb">
+     <img class="pic" src="image gallery/keyboard.png">
+</div><p>Keyboard</p></a>
 
+</div>
+</div>
 
-    <h1 id="jq">Jquery </h1>
-        <div id ="part">
-           <ol>
-       <li> <a href="Jquery/jqfirst.html">Show/Hide in Jquery</a></li>
-       <br>
+<!-- ================= JQUERY ================= -->
 
-               
- <li> <a href="Jquery/slide.html"> Slide Function</a></li>
-       <br>
+<div class="section" id="jq">
+<h2>Jquery Projects</h2>
 
-                <li> <a href="Jquery/fade.html"> Fade Function</a></li>
-               
-       <br>
-               
-         <li> <a href="Jquery/menu.html"> Menu Animation</a></li>
-               
-       <br>
-                <li> <a href="Jquery/animated.html"> Animate Effect </a></li>
-               
-       <br>
+<div class="grid">
 
+<a class="card" href="Jquery/jqfirst.html"><div class="thumb">
+    <img class="pic" src="image gallery/show.png">
+</div><p>Show / Hide</p></a>
+<a class="card" href="Jquery/slide.html"><div class="thumb">
+    <img class="pic" src="image gallery/slidejq.png">
+</div><p>Slide Effect</p></a>
+<a class="card" href="Jquery/fade.html"><div class="thumb">
+    <img class="pic" src="image gallery/fadejq.png">
+</div><p>Fade Effect</p></a>
+<a class="card" href="Jquery/menu.html"><div class="thumb">
+    <img class="pic" src="image gallery/menu anim.png">
+</div><p>Menu Animation</p></a>
+<a class="card" href="Jquery/animated.html"><div class="thumb">
+     <img class="pic" src="image gallery/animeffect.png">
+</div><p>Animate Effect</p></a>
 
+</div>
+</div>
 
+<!-- ================= BOOTSTRAP ================= -->
 
+<div class="section" id="boot">
+<h2>Bootstrap Projects</h2>
 
-               <h1 id="boot">Bootstrap</h1>
-        <div id ="main">
-           <ol>
-       <li> <a href="Bootstrap/Index.html">Text Setting</a></li>
-       <br>
-                  <li> <a href="Bootstrap/grid.html">Layout in Bootstrap</a></li>
-       <br>
+<div class="grid">
 
-                <li> <a href="Bootstrap/banner.html">Image Banner</a></li>
-       <br>
+<a class="card" href="Bootstrap/Index.html"><div class="thumb">
+     <img class="pic" src="image gallery/text b.png">
+</div><p>Text Setting</p></a>
+<a class="card" href="Bootstrap/grid.html"><div class="thumb">
+     <img class="pic" src="image gallery/grid.png">
+</div><p>Grid Layout</p></a>
+<a class="card" href="Bootstrap/banner.html"><div class="thumb">
+     <img class="pic" src="image gallery/boots.avif">
+</div><p>Image Banner</p></a>
+<a class="card" href="Bootstrap/parabanner.html"><div class="thumb">
+     <img class="pic" src="image gallery/boots.avif">
+</div><p>Text Banner</p></a>
 
-                <li> <a href="Bootstrap/parabanner.html">Text Banner</a></li>
-       <br>
-               <li> <a href="Bootstrap/button.html">Button Layout</a></li>
-       <br>
-                  <li> <a href="Bootstrap/cube.html">Rubic's Cube</a></li>
-       <br>
+<a class="card" href="Bootstrap/cube.html"><div class="thumb">
+     <img class="pic" src="image gallery/boots.avif">
+</div><p>Rubic's Cube</p></a>
 
-               
-    
+</div>
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
