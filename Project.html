@@ -1,114 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects | Ishika Sharma</title>
 
-</head>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-     body{
-        background-color: F7EEED;
-        width: 100%;
-        height: 100%;
-    }
-    
-h1{
-    font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-    text-align:center;
-font-size:50px;
-width:400px;
-margin:auto;
-box-shadow:0px 10px 30px rgb(226, 237, 247);
-color:#F7EEED;
-background-color:#F6A6BB;
-border-radius: 10px;
-margin-top: 3%;
 
-
-}
-#title
-{
-
-width:40%;
-text-align: center;
-margin:auto;
-margin-left: 28%;
-margin-top:40px;
-color:#0077b6;
+/* ===== ROOT COLORS ===== */
+:root{
+  --bg:#0e1320;
+  --card:#151b2f;
+  --accent:#f6a6bb;
+  --text:#eaeaea;
+  --muted:#a5a5a5;
 }
 
-
-#title ol li 
-{
-
-width:30%px;
-text-align:center;
-padding:10px;
-cursor:pointer;
-transition:0.50s;
-list-style:none;
-border:1px black solid;
-border-radius:10px;
-margin-left:30px;
-color:#0077b6;
+/* ===== BASE ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-#title ol li :link{
-
-    color:#0077b6;
-}
-#title ol li :visited{
-    color:black;
-   
-}
-#title ol li :hover
-{
-color:rgb(217, 233, 243);
-transform:scale(1.20);
-text-decoration: underline;
-
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f0f14;
+  color:var(--text);
 }
 
+/* ===== NAVBAR ===== */
+header{
+  background:#0b0f1a;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
 
- /*   Media Query  */
+nav{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
- /* Extra small devices (phones, 600px and down) */
+nav h2{
+  color:#c97a8c;
+  font-weight:500;
+}
 
- @media only screen and (max-width: 600px)
- {
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
 
-    h1{
-        width: 300px;
-        font-size: 40px;
-        margin-top: 5%;
-        
-    }
- }
+nav ul li a{
+  color:#eaeaea;
+  text-decoration:none;
+  font-weight:500;
+  transition:.3s;
+}
 
+nav ul li a:hover{
+  color:#c97a8c;
+}
 
+/* ===== PAGE TITLE ===== */
+.page-title{
+  text-align:center;
+  padding:70px 20px 30px;
+}
+
+.page-title h1{
+  font-size:46px;
+  color:#c97a8c;
+}
+
+/* ===== PROJECTS ===== */
+.projects{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+/* ===== CARD ===== */
+.project-card{
+  background:#151b2f;
+  border-radius:20px;
+  overflow:hidden;
+  text-decoration:none;
+  color:#eaeaea;
+  box-shadow:0 15px 40px rgba(0,0,0,.35);
+  transition:.4s;
+}
+
+.project-card:hover{
+  transform:translateY(-12px);
+}
+
+/* Thumbnail */
+.thumb{
+  width: 600px;
+  background:#c97a8c;
+  display:flex;
+  align-items:center;
+  
+  font-size:28px;
+  font-weight:700;
+  color:#0e1320;
+}
+
+#pic{
+    width: 450px;
+}
+/* Content */
+.project-info{
+  padding:22px;
+}
+
+.project-info h3{
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.project-info p{
+  font-size:14px;
+  color:#a5a5a5;
+  margin-bottom:15px;
+}
+
+.project-info span{
+  color:#c97a8c;
+  font-weight:500;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0b0f1a;
+  text-align:center;
+  padding:30px;
+  color:#a5a5a5;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+  .page-title h1{
+    font-size:36px;
+  }
+}
 
 </style>
+</head>
+
 <body>
-    <h1> My Projects</h1>
-    <div id="title">
-        <ol>
-       <li> <a href=" https://ishika1077.github.io/ishikaweb/">Disney World </a></li>
-       <br>
-            <li> <a href="  https://ishika1077.github.io/AOTM-web/">Viksit Bharat 2047 </a></li>
-       <br>
-             <li> <a href="  https://ishika1077.github.io/AI-AOTM/">Artificial Intelligence </a></li>
-       <br>
-       </ol>
-        </div>
-    
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <h2>Ishika</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Practice.html">Practice</a></li>
+      <li><a href="https://www.behance.net/ishikasharma42">Graphic Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- TITLE -->
+<section class="page-title">
+  <h1>My Projects</h1>
+</section>
+
+<!-- PROJECT CARDS -->
+<section class="projects">
+
+  <!-- Project 1 -->
+  <a href="https://ishika1077.github.io/ishikaweb/" target="_blank" class="project-card">
+    <div class="thumb">
+         <img id="pic" src="image gallery/disney page.png" alt="">
+    </div>
+    <div class="project-info">
+      <h3>Disney World</h3>
+      <p>Website design project with engaging visuals.</p>
+      <span>View Project →</span>
+    </div>
+  </a>
+
+  <!-- Project 2 -->
+  <a href="https://ishika1077.github.io/AOTM-web/" target="_blank" class="project-card">
+    <div class="thumb">
+         <img id="pic" src="image gallery/viksit bharat.png" alt="">
+    </div>
+    <div class="project-info">
+      <h3>Viksit Bharat 2047</h3>
+      <p>Government awareness themed website.</p>
+      <span>View Project →</span>
+    </div>
+  </a>
+
+  <!-- Project 3 -->
+  <a href="https://ishika1077.github.io/AI-AOTM/" target="_blank" class="project-card">
+    <div class="thumb">
+        <img id="pic" src="image gallery/Screenshot 2025-12-14 144259.png" alt="">
+    </div>
+    <div class="project-info">
+      <h3>Artificial Intelligence</h3>
+      <p>Informational website based on AI concepts.</p>
+      <span>View Project →</span>
+    </div>
+  </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © Ishika Sharma.
+</footer>
+
 </body>
-
 </html>
-
-
