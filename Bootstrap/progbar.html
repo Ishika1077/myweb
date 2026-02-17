@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container mt-3 text-center">
+    <h1>Progress Bar</h1>
+   
+  <div class="progress mt-3" style="height: 30px">
+  <div class="progress-bar" style="width: 25%"></div>
+</div>
+
+
+<div class="progress mt-3" style="height: 30px">
+  <div class="progress-bar bg-warning" style="width: 25%"></div>
+</div>
+
+<div class="progress-stacked mt-3">
+  <div class="progress"  style="width: 15%" >
+    <div class="progress-bar">15%</div>
+  </div>
+  <div class="progress" style="width: 30%">
+    <div class="progress-bar bg-success">30%</div>
+  </div>
+  <div class="progress"  style="width: 20%">
+    <div class="progress-bar bg-info text-dark">20%</div>
+  </div>
+
+  </div>
+
+  <div class="progress mt-3" style="height: 30px" > 
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning " style="width: 25%"></div>
+</div>
+
+
+
+
+<div class="progress mt-3" style="height: 30px" > 
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%"></div>
+</div>
+<div class="text-start mt-4 ">
+<h6>loading...</h6>
+<div  class="progress mt-3" style="height: 30px" > 
+  <div id="yellow" class="progress-bar progress-bar-striped progress-bar-animated " style="width: 0%">
+   
+  </div>
+  </div>
+</div>
+
+
+<script>
+
+var d = document.getElementById("yellow")
+var n = 0;
+
+ setInterval(function(){
+    if(n < 100)
+       n++;
+            d.style.width = n + "%";
+            d.innerHTML = n + "%";
+        
+    }, 300);
+
+</script>
+
+
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
