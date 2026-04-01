@@ -1,224 +1,478 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container mt-4">
-  <h3>Introduction of UI/UX </h3>
-    <p>UI/UX design is about making apps and websites easy, useful, and nice to use.
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UI/UX Case Study</title>
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+  display: flex;
+  background: #f5f7fb;
+  color: #1a1a1a;
+}
+
+/* MAIN CONTENT */
+.main {
+  margin: auto;
+  padding: 40px;
+  width: calc(100% - 260px);
+}
+
+/* HEADER */
+.header h1 {
+  font-size: 32px;
+  color: #243a5e;
+}
+
+.header p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2b4c7e;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+/* LIST */
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ZIGZAG CONTAINER */
+.box{
+     background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.zigzag {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* CARD BASE */
+.zig-card {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  background: #f9fbff;
+  border: 1px solid #e3eaf5;
+  padding: 20px;
+  border-radius: 12px;
+ 
+}
+
+
+
+
+/* HOVER EFFECT */
+.zig-card:hover {
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* TEXT STYLING */
+.zig-card h3 {
     
-   <p> UI/UX design means creating things that are easy to use and look good.
-It is not only for apps or websites—it is used in everything we use in daily life like ATMs, remote controls, cars, and even doors.
-</p>
-<b>🔹UI (User Interface) =</b> how things look 👀(buttons, colors, layout)
-<h6>Example:</h6>
-<ul><li>When you open a food app and easily order food → good UX</li></ul>
+  color: #2b4c7e;
+  margin-bottom: 10px;
+}
 
-<b>🔹UX (User Experience) =</b>  how things feel😊(easy, smooth, enjoyable)
-<h6>Example:</h6>
-<ul><li>When the app looks clean and attractive → good UI</li></ul>
+.zig-card p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
 
-<p><u>Figma</u> is a popular tool used to design UI/UX. It works online and helps designers create app and website designs.</p>
+.zig-card ul {
+  padding-left: 18px;
+}
+
+.zig-card li {
+  font-size: 14px;
+}
+
+.icon-box {
+  
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 12px;
+ 
+}
 
 
-<h3>1. What is UI (User Interface)?</h3>
-<p>UI is the visible part of anything you use. It includes design, colors, buttons, shapes, and layout. UI helps users understand what to do just by looking.</p>
+/* BADGE */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e3ebff;
+  color: #2b4c7e;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 
-<h6>📌 Points:</h6>
-🔹Focus on look and design
+/* HIGHLIGHT BOX */
+.highlight {
+  background: #eef3ff;
+  padding: 15px;
+  border-left: 5px solid #2b4c7e;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+
+/* IMAGES */
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* SMALL TEXT */
+small {
+  color: #777;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- HEADER -->
+  <div class="header">
+   
+    <h1>Introduction to UI/UX Design</h1>
+    <p>Designing experiences that are simple, useful, and visually appealing.</p>
+  </div>
+
+  <!-- INTRO -->
+  <div class="card">
+    <p>
+      UI/UX design is about making apps, websites, and real-world products easy and enjoyable to use.
+      It applies to everything from mobile apps to ATMs, cars, and even doors.
+    </p>
+  </div>
+
+  <!-- UI & UX -->
+  <div class="grid">
+
+    <div class="card">
+      <h2 class="section-title">🎨 UI (User Interface)</h2>
+      <p>UI is the visible part of anything you use. It includes design, colors, buttons, shapes, and layout. UI helps users understand what to do just by looking. </p>
+       </br>
+      <ul>
+        <li>Colors</li>
+        <li>Buttons</li>
+        <li>Icons</li>
+        <li>Layout</li>
+      </ul>
+
+      </br>
+    <hr/>
 </br>
-<b>Includes:</b>
+    <h4>Example (Not just apps):</h4> 
 <ul>
-<li>Colors 🎨</li>
-
-<li>Buttons 🔘</li>
-
-<li>Icons 🔍</li>
-
-<li>Layout 📐</li>
-</ul>
-<h6>Goal:</h6>
- 🔹Make things clear and attractive
-</br>
- <b>Example (Not just apps):</b>
- <ul>
-<li>TV Remote → Buttons and layout = UI</li>
-<li>ATM Machine → Screen and options = UI</li>
+  
 <li>Microwave → Display and buttons = UI</li>
 </ul>
+      </br>
+      
+      <img src="diagrams/ui example.png">
+    </div>
 
-<img style="width: 40%; padding: 20px;" src="diagrams/ui example.png">
-
-<h3>2. What is UX (User Experience)?</h3>
-<p>UX is about how a person feels while using something. If it is easy, fast, and smooth, then UX is good. If it is confusing or slow, UX is bad.</p>
-<h6>📌 Points:</h6>
-🔹Focus on user comfort and ease
+    <div class="card">
+      <h2 class="section-title">😊 UX (User Experience)</h2>
+      <p>UX is about how a person feels while using something. If it is easy, fast, and smooth, then UX is good. If it is confusing or slow, UX is bad. </p>
+    </br>
+      <ul>
+        <li>Easy to use</li>
+        <li>Fast interaction</li>
+        <li>Stress-free flow</li>
+        <li>Enjoyable experience</li>
+      </ul>
+    </br>
+    <hr/>
 </br>
-<b>Makes things:</b>
-<ul>
-
-
-
-<li>Easy to understand</li>
-<li>Quick to use</li>
-<li>Stress-free</li>
-</ul>
-<h6>Goal: </h6>
-    Give good experience
-</br>
-<b>Example (Not just apps):</b> 
+    <h4>Example (Not just apps):</h4> 
 <ul>
     <li>ATM → Easy steps to withdraw money = Good UX</li>
-    <li>Door → Opens easily without confusion = Good UX</li>
-    <li>Car → Simple controls while driving = Good UX</li>
+  
 </ul>
-<img style="width: 40%; padding: 20px;" src="diagrams/ux example.png ">
+      
+      </br>
+      <img src="diagrams/ux example.png">
+    </div>
 
+  </div>
 
+  <!-- UI PRINCIPLES -->
+  <div class="card">
+    <h2 class="section-title">🌟 UI Design Principles</h2>
 
-<h3>🌟 Principles of UI Design</h3>
-<h5>1. Clarity (Easy to Understand)</h5>
-<p>Clarity means the design should be simple and easy to understand. Users should not feel confused. Everything (text, buttons, icons) should clearly tell what to do.</p>
+    <div class="grid">
 
-<h6>📌 Points:</h6>
-<ul>
+      <div>
+        <h4>Clarity</h4>
+        <p>Keep everything easy to understand.</p>
+      </div>
+
+      <div>
+        <h4>Consistency</h4>
+        <p>Maintain same design patterns.</p>
+      </div>
+
+      <div>
+        <h4>Simplicity</h4>
+        <p>Remove unnecessary elements.</p>
+      </div>
+
+      <div>
+        <h4>Visual Hierarchy</h4>
+        <p>Show importance using size & color.</p>
+      </div>
+
+      <div>
+        <h4>Feedback</h4>
+        <p>Show response to user actions.</p>
+      </div>
+
+      <div>
+        <h4>Accessibility</h4>
+        <p>Design for everyone.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="box">
+  <h2 class="section-title">🌟 UI Design Principles</h2>
+
+  <div class="zigzag">
+
+    <div class="zig-card ">
+        <div>
+      <h3>1. Clarity (Easy to Understand)</h3>
+      <p>Clarity means the design should be simple and easy to understand. Users should not feel confused. Everything (text, buttons, icons) should clearly tell what to do.</p>
+      <ul>
     <li>Use simple words</li>
     <li>Avoid unnecessary design</li>
     <li>Buttons should be easy to recognize</li>
     <li>Clear labels (like “Login”, “Buy Now”)</li>
-
-</ul>
-<b>Example:</b>
-<ul><li>A big “Submit” button is easier to understand than a small unclear icon.</li></ul>
-
-<h5>2. Consistency (Same Design Everywhere)</h5>
-<p></p>Consistency means keeping the same style throughout the design. When things look and work the same, users don’t get confused.</p>
-
-<h6>📌 Points:</h6>
-<ul>
+    </ul>
+    </div>
+<div class="icon-box">
+    
+           <img style="width: 700px; " src="diagrams/ex 1.png"><div class="icon"></div></div>
+ 
+ </div>   
+</div>
+    
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>2. Consistency (Same Design Everywhere)</h3>
+      <p>Consistency means keeping the same style throughout the design. When things look and work the same, users don’t get confused</p>
+        
+      <ul>
     <li>Same colors and fonts</li>
     <li>Same button styles</li>
     <li>Same layout pattern</li>
     <li>Repeated elements behave similarly</li>
-</ul>
+    </ul>
+    </div>
 
-<b>Example:</b>
-<ul><li>If a button is blue on one page, it should be blue everywhere.</li></ul>
+<div class="icon-box">
+           <img style="width: 700px; " src="diagrams/ex 2.png"><div class="icon"></div></div>
+           
+      </div>
+</div>
 
-<h5>3. Simplicity (Keep it Simple)</h5>
-<p>Simplicity means not adding too many things. A simple design helps users focus and complete tasks quickly.</p>
 
-<h6>📌 Points:</h6>
-<ul><li>Remove unnecessary elements</li>
+
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>3. Simplicity (Keep it Simple)</h3>
+      <p>Simplicity means not adding too many things. A simple design helps users focus and complete tasks quickly.</p>
+        
+      <ul>
+    <li>Remove unnecessary elements</li>
 <li>Use less text</li>
 <li>Clean layout</li>
-<li>Focus on important things</li></ul>
+<li>Focus on important things</li>
+    </ul>
+    </div>
 
-<b>Example:</b> 
-<ul><li>A clean login page with only email + password is better than a crowded page.</li></ul>
+<div class="icon-box">
+           <img style="width: 700px; " src="diagrams/ex 3.png"><div class="icon"></div></div>
+          
+      </div>
+</div>
 
-<h5>4. Visual Hierarchy (Show What is Important)</h5>
-<p>Visual hierarchy means arranging elements so users can easily see what is most important first.</p>
 
-<h6>📌 Points:</h6>
-<ul><li>Use bigger size for important things</li>
+
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>4. Visual Hierarchy (Show What is Important)</h3>
+      <p>Visual hierarchy means arranging elements so users can easily see what is most important first.</p>
+        
+      <ul>
+    <li>Use bigger size for important things</li>
 <li>Use bright colors for important buttons</li>
 <li>Place important items at top</li>
-<li>Use spacing to separate elements</li></ul>
-<b>Example:</b> 
-<ul><li>“Buy Now” button is bigger and highlighted than other text.</li></ul>
+<li>Use spacing to separate elements</li>
+    </ul>
+    </div>
 
+<div class="icon-box">
+           <img style="width: 700px; " src="diagrams/ex 4.png"><div class="icon"></div></div>
 
-<h5>5. Feedback (Response to User Action)</h5>
-<p>Feedback means the system should respond when a user does something. This helps users know their action worked.</p>
+ </div>
+</div>
 
-<h6>📌 Points:</h6>
-<ul><li>Show loading or success message</li>
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>5. Feedback (Response to User Action)</h3>
+      <p>Feedback means the system should respond when a user does something. This helps users know their action worked.</p>
+        
+      <ul>
+    <li>Show loading or success message</li>
 <li>Button changes color when clicked</li>
 <li>Show error messages if something is wrong</li>
-</ul>
-<b>Example:</b> 
-<ul><li>After clicking submit → show “Form submitted successfully”.</li></ul>
+    </ul>
+    </div>
 
-<h5>6. Accessibility (Design for Everyone)</h5>
-<p>Accessibility means making design usable for all people, including those with disabilities.</p>
+<div class="icon-box">
+           <img style="width: 700px; " src="diagrams/ex 5.png"><div class="icon"></div></div>
+    
+ </div>
+</div>
 
-<h6>📌 Points:</h6>
-<ul><li>Use readable fonts</li>
+
+
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>6. Accessibility (Design for Everyone)</h3>
+      <p>Accessibility means making design usable for all people, including those with disabilities.</p>
+        
+      <ul>
+   <li>Use readable fonts</li>
 <li>Good color contrast</li>
 <li>Add icons + text together</li>
-<li>Support screen readers</li></ul>
+<li>Support screen readers</li>
+    </ul>
+    </div>
 
+<div class="icon-box">
+           <img style="width: 700px; " src="diagrams/ex 6.png"><div class="icon"></div></div>
+ 
+ </div>
+</div>
 
-
-
-<b>Example:</b> 
-<ul><li>Black text on white background is easier to read.</li></ul>
-
-<h5>7. Efficiency (Fast and Easy to Use)</h5>
-<p>Efficiency means users can complete tasks quickly without wasting time.</p>
-
-<h6>📌 Points:</h6>
-<ul><li>Reduce steps</li>
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>7. Efficiency (Fast and Easy to Use)</h3>
+      <p>Efficiency means users can complete tasks quickly without wasting time.</p>
+        
+      <ul>
+   <li>Reduce steps</li>
 <li>Provide shortcuts</li>
 <li>Fast navigation</li>
-<li>Auto-fill options</li></ul>
+<li>Auto-fill options</li>
+    </ul>
+    </div>
 
+<div class="icon-box">
+           <img style="width: 700px; " src="diagrams/ex 7.png"><div class="icon"></div></div>
+     
+</div>
+</div>
 
-
-
-<b>Example:</b>
-<ul><li>“One-click buy” option saves time</li></ul>
-
-
-<h5>8. Familiarity (Use Common Design Patterns)</h5>
-<p>Familiarity means using designs that users already know. This makes it easier to use without learning.</p>
-
-<h6>📌 Points:</h6>
-<ul><li>Use common icons (🔍 for search)</li>
+<div class="zigzag">
+    <div class="zig-card ">
+        <div>
+      <h3>8. Familiarity (Use Common Design Patterns)</h3>
+      <p>Familiarity means using designs that users already know. This makes it easier to use without learning.</p>
+        
+      <ul>
+    <li>Use common icons (🔍 for search)</li>
 <li>Follow standard layouts</li>
 <li>Use known patterns</li>
-</ul>
+    </ul>
+    </div>
 
-
-<b> Example:</b>
-<ul><li>Cart icon 🛒 for shopping (everyone understands it).</li></ul>
-
-
-<h3>🌟 Principles of UX Design</h3>
-<h5>1. User-Centered Design</h5>
-<p>User-centered design means designing based on the needs, goals, and problems of users. The designer always thinks from the user’s point of view, not their own.</p>
-
-<h6>📌 Points:</h6><ul>
-    <li>Understand user needs</li>
-    <li>Focus on user goals</li>
-    <li>Design for real people</li>
-    <li>Do user research</li>
-</ul>
-<b> Example:</b>
-<ul><li>A shopping app that shows recommended products based on user interest.</li></ul>
-
-<h5>2. Usability (Easy to Use)</h5>
-<p>Usability means how easily a user can use a product. If users can complete tasks without confusion, the UX is good.</p>
-
-<h6>📌 Points:</h6>
-<ul><li>Easy navigation</li>
-<li>Clear steps</li>
-<li>No confusion</li>
-<li>Simple actions</li></ul>
-
-
-
-
-<b>Example:</b>
-<ul><li>ATM machine with clear steps to withdraw money.</li></ul>
-
-
+<div class="icon-box">
+           <img style="width: 700px;" src="diagrams/cart.png"><div class="icon"></div></div>
+    
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+
+  
+
+
+
+
+</body>
 </html>
