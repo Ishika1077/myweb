@@ -20,7 +20,7 @@
 body {
   
   background: #f5f7fb;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 /* MAIN CONTENT */
@@ -30,33 +30,52 @@ body {
   width: calc(100% - 260px);
 }
 
+
 /* HEADER */
 .header h1 {
-  font-size: 32px;
-  color: #243a5e;
+  font-size: 36px;
+  color: #010408;
+  text-align: center;
+  background-color: #fdbd3e;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .header p {
-  margin-top: 10px;
-  color: #555;
+
+  color: #f9f8f8;
 }
 
 /* CARD */
 .card {
-  background: white;
-  padding: 25px;
+  background: #012a4a;
+  padding: 30px;
   border-radius: 10px;
   margin-top: 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* SECTION TITLE */
-.section-title {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #2b4c7e;
+.card h1{
+  color: #e2f3ff;
+}
+.card p{
+  color: #ffffff;
 }
 
+/* SECTION TITLE */
+.section-title {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #011421;
+  text-align: center;
+  
+}
+
+.box h1{
+background-color: #fdbd3e;
+  padding: 5px;
+  border-radius: 10px;
+}
 /* GRID */
 .grid {
   display: grid;
@@ -64,6 +83,9 @@ body {
   gap: 20px;
 }
 
+.grid h4{
+color: #fdbd3e;
+}
 /* LIST */
 ul {
   margin-left: 20px;
@@ -82,9 +104,7 @@ li {
   margin-top: 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-.section-title {
-text-align: center;
-}
+
 .zigzag {
   display: flex;
   flex-direction: column;
@@ -97,9 +117,9 @@ text-align: center;
   width: 90%;
   margin: auto;
   margin-top: 40px;
-  background: #f9fbff;
+  background: #012a4a;
   border: 1px solid #e3eaf5;
-  padding: 20px;
+  padding: 40px;
   border-radius: 12px;
  
 }
@@ -116,23 +136,25 @@ text-align: center;
 /* TEXT STYLING */
  
 .zig-card h3 {
-    
-  color: #2b4c7e;
+    font-size: 25px;
+  color: #fdbd3e;
   margin-bottom: 10px;
 }
 
 .zig-card p {
-  font-size: 16px;
-  color: #000000;
+  font-size: 18px;
+  color:#ffffff;
   margin-bottom: 10px;
 }
 
 .zig-card ul {
   padding-left: 18px;
+
 }
 
 .zig-card li {
-  font-size: 16px;
+  font-size: 18px;
+ 
 }
 
 .icon-box {
@@ -143,49 +165,28 @@ text-align: center;
   justify-content: center;
   margin-top: 50px;
 }
-
-.icon {
-  width: 10px;
-  height: 10px;
-  border-radius: 12px;
- 
+.icon-box img{
+width: 700px; 
+border:2px solid #fdbd3e;
+ box-shadow: 10px 4px 20px #fceec49e;
+ border-radius: 8px;
+transition: transform 0.4s ease;
 }
 
-
-
-
-/* BADGE */
-.badge {
-  display: inline-block;
-  padding: 5px 10px;
-  background: #e3ebff;
-  color: #2b4c7e;
-  border-radius: 20px;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-/* HIGHLIGHT BOX */
-.highlight {
-  background: #eef3ff;
-  padding: 15px;
-  border-left: 5px solid #2b4c7e;
-  border-radius: 6px;
-  margin-top: 15px;
-}
-
-
-/* IMAGES */
-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+.icon-box img:hover{
+transform: scale(1.2);
 }
 
 /* SMALL TEXT */
 small {
   color: #777;
 }
+
+
+
+
+
+
 
 </style>
 </head>
@@ -215,7 +216,7 @@ small {
   <div class="grid">
 
     <div class="card">
-      <h2 class="section-title"> UI (User Interface)</h2>
+      <h1 class="section-title"> UI (User Interface)</h1>
       <p>UI is the visible part of anything you use. It includes design, colors, buttons, shapes, and layout. UI helps users understand what to do just by looking. </p>
        </br>
       <ul>
@@ -239,7 +240,7 @@ small {
     </div>
 
     <div class="card">
-      <h2 class="section-title"> UX (User Experience)</h2>
+      <h1 class="section-title"> UX (User Experience)</h1>
       <p>UX is about how a person feels while using something. If it is easy, fast, and smooth, then UX is good. If it is confusing or slow, UX is bad. </p>
     </br>
       <ul>
@@ -266,7 +267,7 @@ small {
 
   <!-- UI types -->
   <div class="box">
-  <h2 class="section-title"> Types of UI Design </h2>
+  <h1 class="section-title"> Types of UI Design </h1>
 
   <div class="zigzag">
 
@@ -310,7 +311,7 @@ small {
 <div class="zigzag">
     <div class="zig-card ">
         <div>
-      <h3>2.Voice User Interface </h3>
+      <h3>3.Voice User Interface </h3>
       <p>A Voice User Interface (VUI) allows users to interact with a system using voice commands.</p>
         
       <ul>
@@ -328,7 +329,7 @@ small {
 <div class="zigzag">
     <div class="zig-card ">
         <div>
-      <h3>Touch User Interface</h3>
+      <h3>4. Touch User Interface</h3>
       <p>A Touch User Interface allows users to interact with a system by touching the screen directly.</p>
         
       <ul>
@@ -349,7 +350,7 @@ small {
 </div>
   <!-- UI PRINCIPLES -->
   <div class="card">
-    <h2 class="section-title"> UI Design Principles</h2>
+    <h1 class="section-title"> UI Design Principles</h1>
 
     <div class="grid">
 
@@ -399,7 +400,7 @@ small {
   </div>
 
   <div class="box">
-  <h2 class="section-title"> UI Design Principles</h2>
+  <h1 class="section-title"> UI Design Principles</h1>
 
   <div class="zigzag">
 
@@ -416,7 +417,7 @@ small {
     </div>
 <div class="icon-box">
     
-           <img style="width: 700px; " src="diagrams/ex 1.png"><div class="icon"></div></div>
+           <img  src="diagrams/ex 1.png"></div>
  
  </div>   
 </div>
@@ -436,7 +437,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px; " src="diagrams/ex 2.png"><div class="icon"></div></div>
+           <img src="diagrams/ex 2.png"></div>
            
       </div>
 </div>
@@ -458,7 +459,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px; " src="diagrams/ex 3.png"><div class="icon"></div></div>
+           <img  src="diagrams/ex 3.png"></div>
           
       </div>
 </div>
@@ -480,7 +481,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px; " src="diagrams/ex 4.png"><div class="icon"></div></div>
+           <img  src="diagrams/ex 4.png"></div>
 
  </div>
 </div>
@@ -499,7 +500,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px; " src="diagrams/ex 5.png"><div class="icon"></div></div>
+           <img  src="diagrams/ex 5.png"></div>
     
  </div>
 </div>
@@ -521,7 +522,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px; " src="diagrams/ex 6.png"><div class="icon"></div></div>
+           <img  src="diagrams/ex 6.png"></div>
  
  </div>
 </div>
@@ -541,7 +542,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px; " src="diagrams/ex 7.png"><div class="icon"></div></div>
+           <img  src="diagrams/ex 7.png"></div>
      
 </div>
 </div>
@@ -560,7 +561,7 @@ small {
     </div>
 
 <div class="icon-box">
-           <img style="width: 700px;" src="diagrams/cart.png"><div class="icon"></div></div>
+           <img  src="diagrams/cart.png"></div>
     
 </div>
 </div>
@@ -577,7 +578,7 @@ small {
 
 <!-- UX PRINCIPLES -->
   <div class="card">
-    <h2 class="section-title"> UX Design Principles</h2>
+    <h1 class="section-title"> UX Design Principles</h1>
 
     <div class="grid">
 
@@ -644,7 +645,7 @@ small {
 
 
 <div class="box">
-  <h2 class="section-title"> UX Design Principles</h2>
+  <h1 class="section-title"> UX Design Principles</h1>
 
   <div class="zigzag">
 
@@ -664,7 +665,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 1.png">
+        <img  src="diagrams/ux 1.png">
       </div>
     </div>
 
@@ -685,7 +686,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 2.png">
+        <img  src="diagrams/ux 2.png">
       </div>
     </div>
 
@@ -706,7 +707,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 3.png">
+        <img  src="diagrams/ux 3.png">
       </div>
     </div>
 
@@ -727,7 +728,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 4.png">
+        <img  src="diagrams/ux 4.png">
       </div>
     </div>
 
@@ -747,7 +748,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 5.png">
+        <img  src="diagrams/ux 5.png">
       </div>
     </div>
 
@@ -768,7 +769,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 6.png">
+        <img  src="diagrams/ux 6.png">
       </div>
     </div>
 
@@ -790,7 +791,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 7.png">
+        <img  src="diagrams/ux 7.png">
       </div>
     </div>
 
@@ -811,7 +812,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 8.png">
+        <img  src="diagrams/ux 8.png">
       </div>
     </div>
 
@@ -832,7 +833,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 9.png">
+        <img  src="diagrams/ux 9.png">
       </div>
     </div>
 
@@ -852,7 +853,7 @@ small {
         </ul>
       </div>
       <div class="icon-box">
-        <img style="width: 700px;" src="diagrams/ux 10.png">
+        <img src="diagrams/ux 10.png">
       </div>
     </div>
 
@@ -860,7 +861,7 @@ small {
 
 
     <div class="box">
-  <h2 class="section-title">Information Architecture </h2>
+  <h1 class="section-title">Information Architecture </h1>
 
   <div class="zigzag">
 
@@ -882,23 +883,24 @@ small {
     <div class="zig-card ">
         <div>
       <h3>Elements of Information Architecture (IA)</h3>
+       
      
-      <h4>1. Organization System</h4>
+      <h4 style="color: #fdbd3e;">1. Organization System</h4>
       <p style="margin-top: 8px;">Defines how content is grouped and arranged.</p>
        <ul>
         <li> Products divided into Electronics, Clothes, Books</li></ul>
-      
-        <h4>2. Labeling System</h4>
+       </br>
+        <h4 style="color: #fdbd3e;">2. Labeling System</h4>
       <p style="margin-top: 8px;">Refers to names or labels used for content and menus.</p>
        <ul>
         <li> “Home”, “About Us”, “Contact”, “Cart”</li></ul>
-      
-        <h4>3. Navigation System</h4>
+       </br>
+        <h4 style="color: #fdbd3e;">3. Navigation System</h4>
       <p style="margin-top: 8px;">Shows how users move through the app or website</p>
        <ul>
         <li> Menu bar, sidebar, buttons, links</li></ul>
-      
-        <h4>4. Search System</h4>
+       </br>
+        <h4 style="color: #fdbd3e;"s>4. Search System</h4>
       <p style="margin-top: 8px;">Allows users to search for specific information.</p>
        <ul>
         <li>Search bar in websites like shopping apps</li></ul>
@@ -909,15 +911,15 @@ small {
  <div class="zig-card ">
         <div>
       <h3>How These Elements Work Together</h3>
-     
-      <p><b>1. Organization </b> groups content</p>
-       <p><b>2. Labelling</b> names the content</p>
-        <p><b>3. Navigation</b> helps move around</p>
-         <p><b>4. Search</b> helps find quickly </p>
+  
+      <p>1.<span style="color: #fdbd3e;"> Organization </span> groups content</p>
+       <p>2.<span style="color: #fdbd3e;"> Labelling</span> names the content</p>
+        <p>3.<span style="color: #fdbd3e;"> Navigation</span> helps move around</p>
+         <p>4.<span style="color: #fdbd3e;"> Search</span> helps find quickly </p>
         </br>
       </br>
       
-      <h4 style="color: #2b4c7e;">Example (Shopping App)</h4>
+      <h4 style="color: #fafbfc;">Example (Shopping App)</h4>
 
 <div class="icon-box">
            <img style="width: 700px;" src="diagrams/ex-ia.png"><div class="icon"></div></div>
@@ -925,8 +927,137 @@ small {
  </div>   
  
 </div>
+
+
+
   </div>
+  
+  <div class="box">
+  <h1 class="section-title"> Interaction Design </h1>
+
+  <div class="zigzag">
+
+    <!-- 1 -->
+    <div class="zig-card">
+      <div>
+         <h3>What is Interaction Design ?</h3>
+        <p>Interaction Design (IxD) is the discipline of designing how users interact with digital products such as websites, apps, and systems. It focuses on creating meaningful relationships between users and products through well-planned interactions.</p>
+        <ul>
+          <li>  Make products <span style="color: #fdbd3e;">easy to use</span></li>
+          <li>Ensure <span style="color: #fdbd3e;">efficient user actions</span></li>
+          <li>Provide <span style="color: #fdbd3e;"> clear feedback</span></li>
+          <li>Create <span style="color: #fdbd3e;"> engaging experiences</span></li>
+        </ul>
+        </div>
+       
+        </div>
+
+         <div class="zigzag">
+
+    <!-- 1 -->
+    <div class="zig-card">
+      <div>
+      <h3>Elements of Interaction Design </h3>
+ </div>
+      
+     <div class="icon-box">
+        <img  src="diagrams/element ixd.png">
+      </div>
+
+       
+        </div>
+
+       
+
+    <!-- 1 -->
+    <div class="zig-card">
+      <div>
+      <h3>Difference between UI, UX & IxD </h3>
 </div>
+      
+     <div class="icon-box">
+        <img  src="diagrams/diff bet....png"></div>
+     
+        </div>
+         </div>
+        </div>
+</div>
+
+<div class="box">
+  <h1 class="section-title">  UX Design Process</h1>
+
+  <div class="zigzag">
+
+    <div class="zig-card ">
+        <div>
+      <h3>1. Define Your Problem (Case Study) </h3>
+      <p>This stage involves clearly identifying the problem you are trying to solve, understanding user needs, and setting project goals. It includes defining target users, pain points, and success criteria. </p>
+      <p><b style="color: #fdbd3e;">Example: </b> A food delivery app notices users abandoning carts. The problem is defined as: “Users find the checkout process confusing and time-consuming.”</p>
+   
+        <div class="icon-box">
+        <img  src="diagrams/stage 1.png"></div>
+     
+</div>
+</div>
+
+ <div class="zig-card ">
+        <div>
+      <h3>2. Conduct Research </h3>
+      <p>This stage focuses on gathering insights about users, competitors, and the market through methods like interviews, surveys, and usability studies. </p>
+      <p><b style="color: #fdbd3e;">Example: </b> The team conducts user interviews and discovers that users struggle with too many steps during checkout and unclear pricing.</p>
+   
+        <div class="icon-box">
+        <img  src="diagrams/stage 2.png"></div>
+     
+</div>
+</div>
+
+<div class="zig-card ">
+        <div>
+      <h3>3. Design & Prototype </h3>
+      <p>Designing solutions to the identified problem and creating wireframes or interactive prototypes to visualize how the product will work. </p>
+      <p><b style="color: #fdbd3e;">Example: </b> Designers create a simplified one-page checkout prototype with clear pricing and fewer steps using tools like Figma.</p>
+   
+        <div class="icon-box">
+        <img  src="diagrams/stage 3.png"></div>
+     
+</div>
+</div>
+
+<div class="zig-card ">
+        <div>
+      <h3>4. Test & Gather Feedback </h3>
+      <p>Testing the prototype with real users to identify usability issues and collect feedback on the design.</p>
+      <p><b style="color: #fdbd3e;">Example: </b> Users test the new checkout prototype and report that it is faster, but some buttons are hard to notice.</p>
+   
+        <div class="icon-box">
+        <img  src="diagrams/stage 4.png"></div>
+     
+</div>
+</div>
+
+<div class="zig-card ">
+        <div>
+      <h3>5. Iterate & Refine </h3>
+      <p>Improving the design based on feedback and repeating the process until the solution meets user needs effectively. </p>
+      <p><b style="color: #fdbd3e;">Example: </b> Designers update button visibility and layout, then retest until users can complete checkout smoothly without confusion.</p>
+   
+        <div class="icon-box">
+        <img  src="diagrams/stage 5.png"></div>
+     
+</div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
 
 
 
