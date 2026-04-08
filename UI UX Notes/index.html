@@ -30,6 +30,53 @@ body {
   width: calc(100% - 260px);
 }
 
+.main {
+  margin-top: 80px; /* space for fixed navbar */
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  background: #0004076b;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+  color: #fdbd3e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fdbd3e;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  background: #fdbd3e;
+  color: #012a4a;
+}
+
+/* PUSH CONTENT DOWN (important!) */
 
 /* HEADER */
 .header h1 {
@@ -75,6 +122,27 @@ body {
 .card img:hover{
   transform: scale(1.2);
 }
+.new {
+  
+  
+  background: #fdbd3e;
+  color: #012a4a;
+  text-decoration: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.new:hover{
+
+box-shadow: 0 4px 10px rgba(233, 209, 130, 0.707);
+transform: scale(1.05);
+}
+
 
 /* SECTION TITLE */
 .section-title {
@@ -213,8 +281,22 @@ small {
 
 
 <!-- MAIN -->
-<div class="main">
+ 
 
+
+  <nav class="navbar">
+  <div class="logo">UI/UX</div>
+
+  <ul class="nav-links">
+    <li><a href="#types">UI Types</a></li>
+    <li><a href="#UI principle ">UI Principles</a></li>
+    <li><a href="#UX principle">UX Principles</a></li>
+    <li><a href="#IA">Information Architecture</a></li>
+    <li><a href="#Interaction">Interaction Design</a></li>
+    <li><a href="process">UX Process</a></li>
+  </ul>
+</nav>
+<div class="main">
   <!-- HEADER -->
   <div class="header">
    
@@ -284,6 +366,7 @@ small {
 
 
   <!-- UI types -->
+   <div id="types">
   <div class="box">
   <h1 class="section-title"> Types of UI Design </h1>
 
@@ -357,7 +440,7 @@ small {
     </ul>
     </div>
 
-
+</div>
     
 </div>
 </div>
@@ -367,6 +450,7 @@ small {
  
 </div>
   <!-- UI PRINCIPLES -->
+   <div id="UI principle">
   <div class="card">
     <h1 class="section-title"> UI Design Principles</h1>
 
@@ -413,188 +497,18 @@ small {
   <p>Use known patterns.</p>
 </div>
 
+    <a class="new" href="UI design.html">Learn more...</a>
+
 
     </div>
   </div>
-
-  <div class="box">
-  <h1 class="section-title"> UI Design Principles</h1>
-
-  <div class="zigzag">
-
-    <div class="zig-card ">
-        <div>
-      <h3>1. Clarity (Easy to Understand)</h3>
-      <p>Clarity means the design should be simple and easy to understand. Users should not feel confused. Everything (text, buttons, icons) should clearly tell what to do.</p>
-      <ul>
-    <li>Use simple words</li>
-    <li>Avoid unnecessary design</li>
-    <li>Buttons should be easy to recognize</li>
-    <li>Clear labels (like “Login”, “Buy Now”)</li>
-    </ul>
-    </div>
-<div class="icon-box">
-    
-           <img  src="diagrams/ex 1.png"></div>
+</div>
  
- </div>   
-</div>
-    
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>2. Consistency (Same Design Everywhere)</h3>
-      <p>Consistency means keeping the same style throughout the design. When things look and work the same, users don’t get confused</p>
-        
-      <ul>
-    <li>Same colors and fonts</li>
-    <li>Same button styles</li>
-    <li>Same layout pattern</li>
-    <li>Repeated elements behave similarly</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img src="diagrams/ex 2.png"></div>
-           
-      </div>
-</div>
-
-
-
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>3. Simplicity (Keep it Simple)</h3>
-      <p>Simplicity means not adding too many things. A simple design helps users focus and complete tasks quickly.</p>
-        
-      <ul>
-    <li>Remove unnecessary elements</li>
-<li>Use less text</li>
-<li>Clean layout</li>
-<li>Focus on important things</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img  src="diagrams/ex 3.png"></div>
-          
-      </div>
-</div>
-
-
-
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>4. Visual Hierarchy (Show What is Important)</h3>
-      <p>Visual hierarchy means arranging elements so users can easily see what is most important first.</p>
-        
-      <ul>
-    <li>Use bigger size for important things</li>
-<li>Use bright colors for important buttons</li>
-<li>Place important items at top</li>
-<li>Use spacing to separate elements</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img  src="diagrams/ex 4.png"></div>
-
- </div>
-</div>
-
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>5. Feedback (Response to User Action)</h3>
-      <p>Feedback means the system should respond when a user does something. This helps users know their action worked.</p>
-        
-      <ul>
-    <li>Show loading or success message</li>
-<li>Button changes color when clicked</li>
-<li>Show error messages if something is wrong</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img  src="diagrams/ex 5.png"></div>
-    
- </div>
-</div>
-
-
-
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>6. Accessibility (Design for Everyone)</h3>
-      <p>Accessibility means making design usable for all people, including those with disabilities.</p>
-        
-      <ul>
-   <li>Use readable fonts</li>
-<li>Good color contrast</li>
-<li>Add icons + text together</li>
-<li>Support screen readers</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img  src="diagrams/ex 6.png"></div>
- 
- </div>
-</div>
-
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>7. Efficiency (Fast and Easy to Use)</h3>
-      <p>Efficiency means users can complete tasks quickly without wasting time.</p>
-        
-      <ul>
-   <li>Reduce steps</li>
-<li>Provide shortcuts</li>
-<li>Fast navigation</li>
-<li>Auto-fill options</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img  src="diagrams/ex 7.png"></div>
-     
-</div>
-</div>
-
-<div class="zigzag">
-    <div class="zig-card ">
-        <div>
-      <h3>8. Familiarity (Use Common Design Patterns)</h3>
-      <p>Familiarity means using designs that users already know. This makes it easier to use without learning.</p>
-        
-      <ul>
-    <li>Use common icons (🔍 for search)</li>
-<li>Follow standard layouts</li>
-<li>Use known patterns</li>
-    </ul>
-    </div>
-
-<div class="icon-box">
-           <img  src="diagrams/cart.png"></div>
-    
-</div>
-</div>
-
-
-
- 
-</div>
-
-  
-
 
 
 
 <!-- UX PRINCIPLES -->
+ <div id="UX principle">
   <div class="card">
     <h1 class="section-title"> UX Design Principles</h1>
 
@@ -652,232 +566,20 @@ small {
 
     
 
+    <a class="new" href="UX design.html">Learn more...</a>
+
 
     </div>
   </div>
 
+</div>
 
 
 
 
 
 
-<div class="box">
-  <h1 class="section-title"> UX Design Principles</h1>
-
-  <div class="zigzag">
-
-    <!-- 1 -->
-    <div class="zig-card">
-      <div>
-        <h3>1. User-Centered Design (focusing on users’ needs)</h3>
-        <p>Design should always focus on the needs, goals, and behaviors of the user rather than the system or business alone.</p>
-        <ul>
-         
-
-
-          <li> Understand users through research (surveys, interviews)</li>
-          <li>Create user personas</li>
-          <li>Design based on real user problems</li>
-          <li>Test designs with actual users</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 1.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-    <!-- 2 -->
-    <div class="zig-card">
-      <div>
-        <h3>2. Usability (easy to use)</h3>
-        <p>A product should be easy to use and intuitive (easy to understand without thinking much), even for first-time users</p>
-        <ul>
-          <li> Simple and clear navigation</li>
-          <li>Minimal learning efforts</li>
-          <li>Clear instructions and feedback</li>
-          <li>Reduce user errors</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 2.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-    <!-- 3 -->
-    <div class="zig-card">
-      <div>
-        <h3>3. Consistency (uniformity in design)</h3>
-        <p>Elements should behave and appear consistently throughout the product.</p>
-        <ul>
-          <li>Same colors, fonts, and layouts</li>
-          <li>Consistent button styles and actions</li>
-          <li>Follow platform conventions (e.g., Android/iOS patterns)</li>
-         
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 3.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-    <!-- 4 -->
-    <div class="zig-card">
-      <div>
-        <h3>4. Accessibility (usable for all people)</h3>
-        <p>Design should be usable by people with different abilities and disabilities.</p>
-        <ul>
-          <li>Use readable fonts and good contrast</li>
-          <li>Provide alt text for images</li>
-          <li>Support screen readers</li>
-          <li>Ensure keyboard navigation</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 4.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-    <!-- 5 -->
-    <div class="zig-card">
-      <div>
-        <h3>5. Visual Hierarchy(arranging importance visually)</h3>
-        <p>Arrange elements to guide users’ attention to the most important parts first.</p>
-        <ul>
-         <li>Use size, color, and spacing effectively</li>
-         <li>Highlight key actions (e.g., buttons)</li>
-         <li>Organize content logically</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 5.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-    <!-- 6 -->
-    <div class="zig-card">
-      <div>
-        <h3>6. Feedback & Responsiveness (system response to user actions)</h3>
-        <p>Users should always know what is happening when they interact with the system.</p>
-        <ul>
-           <li>  Show loading indicators</li>
-          <li>Provide success/error messages</li>
-          <li>Use animations or micro-interactions</li>
-          <li>Immediate response to actions</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 6.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-
-    <!-- 7 -->
-    <div class="zig-card">
-      <div>
-        <h3>7. Simplicity (Minimalism)</h3>
-        <p>Keep the design simple by removing unnecessary elements.</p>
-        <ul>
-          <li>Avoid clutter</li>
-          <li>Focus on essential features</li>
-          <li>Use whitespace effectively</li>
-          <li>One primary action per screen</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 7.png">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="zigzag">
-
-    <!-- 8 -->
-    <div class="zig-card">
-      <div>
-        <h3>8. Learnability (Easy to Learn)</h3>
-        <p>New users should quickly understand how to use the product.</p>
-        <ul>
-          <li>Simple onboarding</li>  
-          <li>Guided steps</li>
-          <li>Helpful hints</li>
-          <li>Provide tutorials</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 8.png">
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-  <!-- 9 -->
-    <div class="zig-card">
-      <div>
-        <h3>9. Flexibility & Efficiency (adaptability and speed of use)</h3>
-        <p>Design should work well for both beginners and advanced users.</p>
-        <ul>
-     <li>Provide shortcuts for experienced users</li>
-     <li>Allow customization</li>
-     <li>Optimize workflows</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img  src="diagrams/ux 9.png">
-      </div>
-    </div>
-
- 
-
-
-
-    <!-- 10  -->
-    <div class="zig-card">
-      <div>
-        <h3>10. Error Prevention & Recovery (avoiding and fixing mistakes)</h3>
-        <p>Prevent errors when possible and help users recover easily if they occur.</p>
-        <ul>
-       <li>Confirm destructive actions (e.g., delete)</li>
-       <li>Provide undo options</li>
-       <li>Clear error messages with solutions</li>
-        </ul>
-      </div>
-      <div class="icon-box">
-        <img src="diagrams/ux 10.png">
-      </div>
-    </div>
-
- </div>
-
-
+<div id="IA">
     <div class="box">
   <h1 class="section-title">Information Architecture </h1>
 
@@ -887,69 +589,16 @@ small {
         <div>
       <h3>What is Information Architecture?</h3>
       <p>Information Architecture (IA) is the practice of organizing, structuring, and labeling content so that users can easily find and understand information.</p>
-      
-    </div>
-
- 
- </div>   
-</div>
-
-   
-
- <div class="zigzag">
-
-    <div class="zig-card ">
-        <div>
-      <h3>Elements of Information Architecture (IA)</h3>
-       
-     
-      <h4 style="color: #fdbd3e;">1. Organization System</h4>
-      <p style="margin-top: 8px;">Defines how content is grouped and arranged.</p>
-       <ul>
-        <li> Products divided into Electronics, Clothes, Books</li></ul>
-       </br>
-        <h4 style="color: #fdbd3e;">2. Labeling System</h4>
-      <p style="margin-top: 8px;">Refers to names or labels used for content and menus.</p>
-       <ul>
-        <li> “Home”, “About Us”, “Contact”, “Cart”</li></ul>
-       </br>
-        <h4 style="color: #fdbd3e;">3. Navigation System</h4>
-      <p style="margin-top: 8px;">Shows how users move through the app or website</p>
-       <ul>
-        <li> Menu bar, sidebar, buttons, links</li></ul>
-       </br>
-        <h4 style="color: #fdbd3e;"s>4. Search System</h4>
-      <p style="margin-top: 8px;">Allows users to search for specific information.</p>
-       <ul>
-        <li>Search bar in websites like shopping apps</li></ul>
-      
-
-    </div>
- </div>   
- <div class="zig-card ">
-        <div>
-      <h3>How These Elements Work Together</h3>
-  
-      <p>1.<span style="color: #fdbd3e;"> Organization </span> groups content</p>
-       <p>2.<span style="color: #fdbd3e;"> Labelling</span> names the content</p>
-        <p>3.<span style="color: #fdbd3e;"> Navigation</span> helps move around</p>
-         <p>4.<span style="color: #fdbd3e;"> Search</span> helps find quickly </p>
-        </br>
-      </br>
-      
-      <h4 style="color: #fafbfc;">Example (Shopping App)</h4>
-
-<div class="icon-box">
-           <img style="width: 700px;" src="diagrams/ex-ia.png"><div class="icon"></div></div>
-    </div>
- </div>   
+   </div>
+      <a  class="new" href="IA.html">Learn more...</a>
  
 </div>
-
-
-
   </div>
-  
+  </div>
+  </div>
+
+
+  <div id="Interaction">
   <div class="box">
   <h1 class="section-title"> Interaction Design </h1>
 
@@ -967,112 +616,53 @@ small {
           <li>Create <span style="color: #fdbd3e;"> engaging experiences</span></li>
         </ul>
         </div>
-       
+        <div style="margin-top: 15px;">
+       <a class="new" href="Interaction.html">Learn more...</a>
+     </div>
         </div>
-
-         <div class="zigzag">
-
-    <!-- 1 -->
-    <div class="zig-card">
-      <div>
-      <h3>Elements of Interaction Design </h3>
  </div>
-      
-     <div class="icon-box">
-        <img  src="diagrams/element ixd.png">
-      </div>
-
-       
-        </div>
-
-       
-
-    <!-- 1 -->
-    <div class="zig-card">
-      <div>
-      <h3>Difference between UI, UX & IxD </h3>
-</div>
-      
-     <div class="icon-box">
-        <img  src="diagrams/diff bet....png"></div>
-     
-        </div>
          </div>
-        </div>
-</div>
+        
 
-<div class="box">
-  <h1 class="section-title">  UX Design Process</h1>
+<div id="process">
+ <div class="card">
+    <h1 class="section-title"> UX Design Principles</h1>
 
-  <div class="zigzag">
+    <div class="grid">
 
-    <div class="zig-card ">
-        <div>
-      <h3>1. Define Your Problem (Case Study) </h3>
-      <p>This stage involves clearly identifying the problem you are trying to solve, understanding user needs, and setting project goals. It includes defining target users, pain points, and success criteria. </p>
-      <p><b style="color: #fdbd3e;">Example: </b> A food delivery app notices users abandoning carts. The problem is defined as: “Users find the checkout process confusing and time-consuming.”</p>
-   
-        <div class="icon-box">
-        <img  src="diagrams/stage 1.png"></div>
+      <div>
+      <h4>1. Define your problem</h4>
      
-</div>
-</div>
+    </div>
 
- <div class="zig-card ">
-        <div>
-      <h3>2. Conduct Research </h3>
-      <p>This stage focuses on gathering insights about users, competitors, and the market through methods like interviews, surveys, and usability studies. </p>
-      <p><b style="color: #fdbd3e;">Example: </b> The team conducts user interviews and discovers that users struggle with too many steps during checkout and unclear pricing.</p>
-   
-        <div class="icon-box">
-        <img  src="diagrams/stage 2.png"></div>
+    <div>
+      <h4>2. Conduct Research</h4>
      
-</div>
-</div>
+    </div>
 
-<div class="zig-card ">
-        <div>
-      <h3>3. Design & Prototype </h3>
-      <p>Designing solutions to the identified problem and creating wireframes or interactive prototypes to visualize how the product will work. </p>
-      <p><b style="color: #fdbd3e;">Example: </b> Designers create a simplified one-page checkout prototype with clear pricing and fewer steps using tools like Figma.</p>
+    <div>
+      <h4>3. Prototype</h4>
+    
+    </div>
+
+    <div>
+      <h4>4. Test & Gather Feedback</h4>
+    
+    </div>
+
+    <div>
+      <h4>5. Iterate</h4>
+      
+    </div>
+
    
-        <div class="icon-box">
-        <img  src="diagrams/stage 3.png"></div>
-     
+
+    
+
+    <a class="new" href="UX process.html">Learn more...</a>
+
 </div>
-</div>
-
-<div class="zig-card ">
-        <div>
-      <h3>4. Test & Gather Feedback </h3>
-      <p>Testing the prototype with real users to identify usability issues and collect feedback on the design.</p>
-      <p><b style="color: #fdbd3e;">Example: </b> Users test the new checkout prototype and report that it is faster, but some buttons are hard to notice.</p>
-   
-        <div class="icon-box">
-        <img  src="diagrams/stage 4.png"></div>
-     
-</div>
-</div>
-
-<div class="zig-card ">
-        <div>
-      <h3>5. Iterate & Refine </h3>
-      <p>Improving the design based on feedback and repeating the process until the solution meets user needs effectively. </p>
-      <p><b style="color: #fdbd3e;">Example: </b> Designers update button visibility and layout, then retest until users can complete checkout smoothly without confusion.</p>
-   
-        <div class="icon-box">
-        <img  src="diagrams/stage 5.png"></div>
-     
-</div>
-</div>
-
-
-
-
-
-
-
-
+ 
 </div>
 </div>
 
