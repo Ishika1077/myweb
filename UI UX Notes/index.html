@@ -40,7 +40,7 @@ body {
   top: 0;
   left: 0;
   width: 95%;
-  background: #0004076b;
+  background: #feffff;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 }
 
 .logo {
-  color: #fdbd3e;
+  color: #012a4a;
   font-size: 22px;
   font-weight: bold;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-links li a {
-  color: #fdbd3e;
+  color: #012a4a;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -80,7 +80,7 @@ body {
 
 /* HEADER */
 .header h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #010408;
   text-align: center;
   background-color: #fdbd3e;
@@ -104,6 +104,7 @@ body {
 
 .card h1{
   color: #e2f3ff;
+   font-size: 30px;
 }
 .card p{
   color: #ffffff;
@@ -122,31 +123,46 @@ body {
 .card img:hover{
   transform: scale(1.2);
 }
+
+
 .new {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
   
-  
-  background: #fdbd3e;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
   color: #012a4a;
-  text-decoration: none;
+  background: linear-gradient(135deg, #fdbd3e, #ffd978);
+
   border: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 8px;
+  border-radius: 30px;
+
   cursor: pointer;
-  transition: 0.3s;
+  text-decoration: none;
 
-}
-.new:hover{
-
-box-shadow: 0 4px 10px rgba(233, 209, 130, 0.707);
-transform: scale(1.05);
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 18px rgba(253, 189, 62, 0.4);
 }
 
+/* Hover Effect */
+.new:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(253, 189, 62, 0.6);
+  background: linear-gradient(135deg, #ffd978, #fdbd3e);
+}
+
+/* Click Effect */
+.new:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
 /* SECTION TITLE */
 .section-title {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 5px;
   color: #011421;
   text-align: center;
@@ -285,7 +301,7 @@ small {
 
 
   <nav class="navbar">
-  <div class="logo">UI/UX</div>
+  <div class="logo">UIUX</div>
 
   <ul class="nav-links">
     <li><a href="#types">UI Types</a></li>
@@ -300,7 +316,7 @@ small {
   <!-- HEADER -->
   <div class="header">
    
-    <h1>Introduction to UI/UX Design</h1>
+    <h1>Introduction to UIUX Design</h1>
     <p>Designing experiences that are simple, useful, and visually appealing.</p>
   </div>
 
@@ -317,6 +333,7 @@ small {
 
     <div class="card">
       <h1 class="section-title"> UI (User Interface)</h1>
+      <br>
       <p>UI is the visible part of anything you use. It includes design, colors, buttons, shapes, and layout. UI helps users understand what to do just by looking. </p>
        </br>
       <ul>
@@ -341,6 +358,7 @@ small {
 
     <div class="card">
       <h1 class="section-title"> UX (User Experience)</h1>
+      <br>
       <p>UX is about how a person feels while using something. If it is easy, fast, and smooth, then UX is good. If it is confusing or slow, UX is bad. </p>
     </br>
       <ul>
@@ -453,7 +471,7 @@ small {
    <div id="UI principle">
   <div class="card">
     <h1 class="section-title"> UI Design Principles</h1>
-
+<br>
     <div class="grid">
 
       <div>
@@ -497,8 +515,9 @@ small {
   <p>Use known patterns.</p>
 </div>
 
-    <a class="new" href="UI design.html">Learn more...</a>
-
+  <a class="new" href="UI design.html"">
+  Learn More →
+</a>
 
     </div>
   </div>
@@ -509,8 +528,10 @@ small {
 
 <!-- UX PRINCIPLES -->
  <div id="UX principle">
+
   <div class="card">
     <h1 class="section-title"> UX Design Principles</h1>
+    <br>
 
     <div class="grid">
 
@@ -627,7 +648,7 @@ small {
 <div id="process">
  <div class="card">
     <h1 class="section-title"> UX Design Principles</h1>
-
+<br>
     <div class="grid">
 
       <div>
