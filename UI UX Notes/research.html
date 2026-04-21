@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+  /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+  
+  background: #f5f7fb;
+  color: #ffffff;
+}
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #012a4a;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  background: #014f86;
+  transform: scale(1.05);
+}
+
+/* MAIN CONTENT */
+.main {
+  margin: auto;
+  padding: 40px;
+  width: calc(100% - 260px);
+}
+
+
+
+/* CARD */
+.card {
+  background: #012a4a;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h1{
+  color: #e2f3ff;
+}
+.card p{
+  color: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.card img:hover{
+  transform: scale(1.2);
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #011421;
+  text-align: center;
+  
+}
+
+.box h1{
+background-color: #fdbd3e;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.grid h4{
+color: #fdbd3e;
+}
+/* LIST */
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ZIGZAG CONTAINER */
+.box{
+     background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.zigzag {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* CARD BASE */
+.zig-card {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  background: #012a4a;
+  border: 1px solid #e3eaf5;
+  padding: 40px;
+  border-radius: 12px;
+ 
+}
+
+
+
+
+/* HOVER EFFECT */
+.zig-card:hover {
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* TEXT STYLING */
+ 
+.zig-card h3 {
+    font-size: 25px;
+  color: #fdbd3e;
+  margin-bottom: 10px;
+}
+
+.zig-card p {
+  font-size: 18px;
+  color:#ffffff;
+  margin-bottom: 10px;
+}
+
+.zig-card ul {
+  padding-left: 18px;
+
+}
+
+.zig-card li {
+  font-size: 18px;
+ 
+}
+
+.icon-box {
+  
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.icon-box img{
+width: 700px; 
+border:2px solid #fdbd3e;
+ box-shadow: 10px 4px 20px #fceec49e;
+ border-radius: 8px;
+transition: transform 0.4s ease;
+}
+
+.icon-box img:hover{
+transform: scale(1.2);
+}
+
+
+
+
+
+/* SMALL TEXT */
+small {
+  color: #777;
+}
+</style>
+<body>
+<body>
+    <div class="main">
+       
+            <a class="back-btn" href="index.html">← Back</a>
+<div class="box"> 
+    <h1 class="section-title">User Research</h1> 
+ <div class="zigzag">
+
+    <div class="zig-card ">
+        <div>
+      <h3> Qualitative research (Focus on WHY) </h3>
+      <p>Qualitative research is a type of research that focuses on understanding people’s thoughts, feelings, and experiences. It answers questions like “why” users behave in a certain way. For example, talking to users in interviews or observing how they use an app are forms of qualitative research. This type of research uses words and opinions instead of numbers.</p>
+      </div>
+</div>
+       <div class="zig-card ">
+        <div>
+      <h3> Quantitative research (Focus on How many) </h3>
+      <p>Quantitative research is a type of research that focuses on numbers and data. It answers questions like “how many” or “how often.” For example, surveys with multiple-choice questions or data showing that 70% of users click a button are part of quantitative research. This type of research uses statistics and measurable data.</p>
+      </div>
+</div>
+ <div class="zig-card ">
+        <div>
+      <h3> Journey Map</h3>
+      <p>A journey map (or user journey map) is a simple way to show the step-by-step experience of a user when they use a product, app, or service.
+
+In very easy language, a journey map is like a story of what a user does, thinks, and feels from start to end.</p>
+<p style="color: #fdbd3e;">A journey map shows:</p>
+
+<ul>
+   
+    <li> what the user does</li>
+    <li>what the user thinks</li>
+    <li>how the user feels</li>
+    <li>what problems the user faces</li>
+</ul></div>
+
+  
+<br>
+ <div>
+      <h3> What is Included in a Journey Map?</h3>
+      <ul>
+
+        <li><span style="color: #fdbd3e; font-weight: 600;">Steps –</span> the actions the user takes</li>
+        <li><span style="color: #fdbd3e;font-weight: 600;">Actions – </span>clicking, searching, buying</li>
+        <li><span style="color: #fdbd3e;font-weight: 600;">Thoughts – </span>what the user is thinking</li>
+        <li><span style="color: #fdbd3e;font-weight: 600;">Feelings – </span>happy, confused, frustrated</li>
+        <li><span style="color: #fdbd3e;font-weight: 600;">Pain points – </span>problems or difficulties</li>
+      </ul>
+</div>
+<br>
+<div>
+      <h3> Why Journey Mapping is Important</h3>
+      <ul>
+
+
+
+       <li>it helps us understand users better</li>
+       <li>it shows where users face problems</li>
+       <li>it helps improve the design</li>
+       <li>it makes the user experience better</li>
+      
+      </ul>
+</div>
+
+<br>
+     <div class="icon-box">
+        <img  src="diagrams/journey.png"></div>
+</div>
+</body>
+</html>
