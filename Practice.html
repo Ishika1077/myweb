@@ -151,6 +151,56 @@ body{
     font-size:16px;
 }
 
+
+/* ===== UI/UX FIXED WIDTH CARDS ===== */
+
+#uiux .grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:28px;
+}
+
+/* Card */
+#uiux .card{
+    width:200px;   /* 👈 fixed professional width */
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#222;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+/* Hover */
+#uiux .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,0.15);
+}
+
+/* KEEP your existing height */
+#uiux .thumb{
+    height:180px;   /* unchanged */
+}
+
+/* Image */
+#uiux .pic{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Text */
+#uiux .card p{
+    padding:12px;
+    font-size:14px;
+    text-align:center;
+    font-weight:600;
+}
+
+
+
 /* ================= MOBILE ================= */
 
 @media(max-width:600px){
@@ -190,6 +240,8 @@ body{
 <a href="#js">JavaScript</a>
 <a href="#jq">Jquery</a>
 <a href="#boot">Bootstrap</a>
+<a href="#uiux">UI UX </a>
+
 </div>
 
 <!-- ================= HTML ================= -->
@@ -331,6 +383,22 @@ body{
 
 </div>
 </div>
+
+
+<div class="section" id="uiux">
+<h2>UI UX Projects</h2>
+
+<div class="grid">
+
+<a class="card" href="UI UX NOTES/index.html"><div class="thumb">
+     <img class="pic" src="image gallery/thumbnail.png">
+</div><p>UI UX Notes</p></a>
+
+<a class="card" href="UI UX NOTES/low.html"><div class="thumb">
+     <img class="pic" src="image gallery/thumbnail.png">
+</div><p>UI UX Notes</p></a>
+
+
 
 </body>
 </html>
