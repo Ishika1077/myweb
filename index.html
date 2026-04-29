@@ -64,7 +64,7 @@ nav ul li a:hover{
 .hero{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:400px;
+    gap:120px;
     padding:80px 8%;
     align-items:center;
 }
@@ -227,6 +227,115 @@ footer p{
     .hero{
         grid-template-columns:1fr;
         text-align:center;
+    }
+}
+
+/* ============================= */
+/* PROFESSIONAL RESPONSIVENESS   */
+/* ============================= */
+
+/* LARGE SCREENS / LED TVs */
+@media (min-width:1400px){
+    body{
+        font-size:18px;
+    }
+
+    .hero{
+        gap:200px; /* reduce huge 400px gap */
+    }
+
+    section{
+        padding:100px 12%;
+    }
+
+    .profile-img{
+        width:320px;
+        height:320px;
+    }
+
+    .hero-text h1{
+        font-size:40px;
+    }
+}
+
+/* EXTRA LARGE TV SCREENS */
+@media (min-width:1800px){
+    body{
+        max-width:1600px;
+        margin:auto;
+    }
+}
+
+/* TABLETS */
+@media (max-width:1024px){
+    .hero{
+        gap:80px;
+    }
+
+    nav{
+        padding:20px 5%;
+    }
+
+    section{
+        padding:70px 5%;
+    }
+}
+
+/* MOBILE DEVICES */
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        gap:40px;
+        text-align:center;
+    }
+
+    .profile-img{
+        margin:auto;
+    }
+
+    .hero-text h1{
+        font-size:30px;
+    }
+
+    .hero-text p{
+        margin:auto;
+    }
+
+    .btn{
+        padding:10px 24px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width:480px){
+
+    .hero-text h1{
+        font-size:24px;
+    }
+
+    .hero-text h3{
+        font-size:16px;
+    }
+
+    .section-title h2{
+        font-size:26px;
+    }
+
+    .profile-img{
+        width:200px;
+        height:200px;
     }
 }
 </style>
