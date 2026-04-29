@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figma Projects | Ishika Sharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0e1320;
+  --card:#151b2f;
+  --accent:#f6a6bb;
+  --text:#eaeaea;
+  --muted:#a5a5a5;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+header{
+  background:#0b0f1a;
+  position:sticky;
+  top:0;
+}
+
+nav{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h2{color:var(--accent);}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--text);
+  transition:.3s;
+}
+
+nav a:hover{color:var(--accent);}
+
+.hero{
+  text-align:center;
+  padding:80px 20px 40px;
+}
+
+.hero h1{
+  font-size:30px;
+  color:var(--accent);
+}
+
+.hero p{
+  margin-top:10px;
+  color:var(--muted);
+}
+
+.projects{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.small-card{
+  max-width:320px;
+  margin:auto;
+  border-radius:14px;
+  overflow:hidden;
+  background:linear-gradient(145deg,#151b2f,#101524);
+  box-shadow:0 6px 20px rgba(0,0,0,.35);
+  transition:.3s;
+}
+
+.small-card:hover{
+  transform:translateY(-6px) scale(1.02);
+}
+
+.small-card img{
+  height:160px;
+  object-fit:cover;
+}
+
+.small-card .card-content{
+  padding:16px;
+}
+
+.small-card h3{
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.small-card p{
+  font-size:13px;
+  margin-bottom:12px;
+  color:var(--muted);
+}
+
+.small-card .btn{
+  padding:8px 16px;
+  font-size:13px;
+  border-radius:20px;
+}
+
+.small-card img{
+  width:100%;
+  aspect-ratio: 16 / 10;   /* keeps consistent shape */
+  object-fit: cover;
+  display:block;
+}
+
+.tags{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:15px;
+}
+
+.tag{
+  background:rgba(246,166,187,0.15);
+  color:var(--accent);
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 18px;
+  background:var(--accent);
+  color:#0e1320;
+  border-radius:25px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  transition:.3s;
+}
+
+.btn:hover{
+  opacity:.85;
+}
+
+footer{
+  background:#0b0f1a;
+  text-align:center;
+  padding:25px;
+  color:var(--muted);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>Ishika</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+   <li><a href="Practice.html">Practice</a></li>
+   <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Figma Projects</h1>
+  <p>UI/UX designs crafted with creativity and precision</p>
+</section>
+
+<section class="projects">
+
+ <div class="card small-card">
+    <img src="image gallery/figma.png" alt="">
+    <div class="card-content">
+      <h3>Mobile UI</h3>
+    
+    
+      <a href="https://www.figma.com/proto/U5pQe2sJw8oaTsGKfW0X6U/Untitled?node-id=1-2&t=nuAr0WrBuMKvyQXj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" class="btn">View Design</a>
+    </div>
+  </div>
+
+ <div class="card small-card">
+    <img src="image gallery/figma.png" alt="">
+    <div class="card-content">
+      <h3>Desktop UI</h3>
+     
+     
+      <a href="https://www.figma.com/proto/U5pQe2sJw8oaTsGKfW0X6U/photo-gallery?node-id=7-20&t=EtgYsVpfWZJDfx3m-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" class="btn">View Design</a>
+    </div>
+  </div>
+
+  
+
+  
+</section>
+
+<footer>
+  © Ishika Sharma | UI/UX Portfolio
+</footer>
+
+</body>
+</html>
