@@ -1,0 +1,211 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figma Projects | Ishika Sharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+  :root {
+      --cream: #F3EFE8;
+      --olive: #303D35;
+      --sage: #657C69;
+      --terracotta: #B97559;
+      --teal: #78938A;
+      --white: #FFFFFF;
+      --text: #454A43;
+    }
+
+
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  background: var(--cream);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+}
+
+ h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--cream);
+    }
+.hero{
+  text-align:center;
+  padding:80px 20px 40px;
+}
+
+.hero h1{
+  font-size:30px;
+  color:var(--terracotta);
+}
+
+.hero p{
+  margin-top:10px;
+  color:var(--text);
+}
+
+.projects{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.small-card{
+  max-width:320px;
+  margin:auto;
+  border-radius:14px;
+  overflow:hidden;
+  background:var(--teal);
+  box-shadow:0 6px 20px rgba(0,0,0,.35);
+  transition:.3s;
+}
+
+.small-card:hover{
+  transform:translateY(-6px) scale(1.02);
+}
+
+.small-card img{
+  height:160px;
+  object-fit:cover;
+}
+
+.small-card .card-content{
+  padding:16px;
+}
+
+.small-card h3{
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.small-card p{
+  font-size:13px;
+  margin-bottom:12px;
+  color:var(--olive)
+}
+
+.small-card .btn{
+  padding:8px 16px;
+  font-size:13px;
+  border-radius:20px;
+}
+
+.small-card img{
+  width:100%;
+  aspect-ratio: 16 / 10;   /* keeps consistent shape */
+  object-fit: cover;
+  display:block;
+}
+
+.tags{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:15px;
+}
+
+.tag{
+  background:rgba(246,166,187,0.15);
+  color:var(--accent);
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 18px;
+  background:var(--accent);
+  color:#0e1320;
+  border-radius:25px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  transition:.3s;
+}
+
+.btn:hover{
+  opacity:.85;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Figma Projects</h1>
+  <p>UI/UX designs crafted with creativity and precision</p>
+</section>
+
+<section class="projects">
+
+  <div class="card small-card">
+     <img src="image gallery/thumbnail.png"alt="">
+    <div class="card-content">
+      <h3>UI UX Notes</h3>
+    
+    
+      <a href="UI UX Notes/index.html"></a>
+
+      </div>
+  </div>
+ 
+
+ <div class="card small-card">
+    <img src="image gallery/figma.png" alt="">
+    <div class="card-content">
+      <h3>UI Design</h3>
+    
+    
+      <a href="https://www.figma.com/proto/U5pQe2sJw8oaTsGKfW0X6U/photo-gallery?node-id=199-203&p=f&t=9rNBGmT37CFxvRYg-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=199%3A203&show-proto-sidebar=1" class="btn"></a>
+    </div>
+  </div>
+
+
+  <div class="card small-card">
+    <img src="image gallery/figma.png" alt="">
+    <div class="card-content">
+      <h3> Desktop Loader</h3>
+    
+    
+      <a href="https://www.figma.com/proto/NmEls20zJMSK1npDinlbGp/desktop-Progress-bar?node-id=6-1389&t=6VVy1ED9oNgMsvoq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A1368" class="btn"></a>
+    </div>
+  </div>
+
+   <div class="card small-card">
+    <img src="image gallery/figma.png" alt="">
+    <div class="card-content">
+      <h3> UI Elements</h3>
+    
+    
+      <a href="https://www.figma.com/proto/xAKjSPuGJf1utIZr2ap8Mn/Register?node-id=2012-38&t=tDOvnpJLYEXqVV3p-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2012%3A38&show-proto-sidebar=1" class="btn"></a>
+    </div>
+  </div>
+
+
+
+  
+</section>
+
+
+</body>
+</html>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

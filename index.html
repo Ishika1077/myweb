@@ -1,0 +1,1016 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishika Sharma | Creative Designer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F3EFE8;
+      --olive: #303D35;
+      --sage: #657C69;
+      --terracotta: #B97559;
+      --teal: #78938A;
+      --white: #FFFFFF;
+      --text: #454A43;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--olive);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-padding {
+      padding: 90px 0;
+    }
+
+    .section-tag {
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 4vw, 45px);
+      margin: 12px 0 18px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: rgba(243,239,232,0.96);
+      padding: 17px 0;
+      border-bottom: 1px solid rgba(48,61,53,0.12);
+    }
+
+    .navbar-brand {
+      color: var(--olive);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--olive);
+      color: white;
+      margin-right: 8px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .navbar .nav-link {
+      color: var(--olive);
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 9px;
+      transition: 0.3s;
+    }
+
+    .navbar .nav-link:hover {
+      color: var(--terracotta);
+    }
+
+    .nav-contact, .primary-btn {
+      background: var(--olive);
+      color: white;
+      border-radius: 30px;
+      padding: 11px 23px;
+      font-size: 14px;
+      border: 1px solid var(--olive);
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .nav-contact:hover, .primary-btn:hover {
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 100px 0 90px;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+
+    .hero h1 span {
+      color: var(--terracotta);
+      font-style: italic;
+    }
+
+    .hero-text {
+      max-width: 520px;
+      line-height: 1.9;
+      color: #62685F;
+      margin-bottom: 28px;
+    }
+
+    .outline-btn {
+      border: 1px solid var(--olive);
+      color: var(--olive);
+      border-radius: 30px;
+      padding: 11px 23px;
+      display: inline-block;
+      margin-left: 10px;
+      transition: 0.3s;
+    }
+
+    .outline-btn:hover {
+      background: var(--sage);
+      color: white;
+      border-color: var(--sage);
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 390px;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 190px 190px 20px 20px;
+      border: 8px solid white;
+      box-shadow: 20px 20px 0 var(--teal);
+    }
+
+    /* ABOUT */
+    .about-section {
+      background: white;
+    }
+
+    .about-image {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .about-text {
+      line-height: 1.9;
+      color: #62685F;
+    }
+
+    .info-card {
+      background: var(--cream);
+      padding: 18px;
+      border-radius: 10px;
+      height: 100%;
+    }
+
+    .info-card h5 {
+      font-size: 16px;
+      color: var(--olive);
+      font-weight: 700;
+    }
+
+    .info-card p {
+      font-size: 13px;
+      margin: 0;
+      color: #687067;
+    }
+
+    /* SKILLS */
+    .skill-box {
+      background: white;
+      padding: 22px 15px;
+      border-radius: 12px;
+      text-align: center;
+      height: 100%;
+      transition: 0.3s;
+      border: 1px solid #e9e2d7;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(48,61,53,0.08);
+    }
+
+    .skill-box i {
+      font-size: 28px;
+      color: var(--terracotta);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .skill-box h6 {
+      color: var(--olive);
+      margin: 0;
+      font-weight: 600;
+    }
+
+    /* EDUCATION */
+    .education-section {
+      background: var(--olive);
+      color: white;
+    }
+
+    .education-section h2 {
+      color: white;
+    }
+
+    .education-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 25px;
+      height: 100%;
+    }
+
+    .education-card h5 {
+      color: #E7C1A9;
+      font-weight: 700;
+    }
+
+    .education-card p {
+      color: #E1E4DF;
+      margin-bottom: 5px;
+    }
+
+    /* FILTER BUTTONS */
+    .filter-btn {
+      background: transparent;
+      color: var(--olive);
+      border: 1px solid #B8BEB5;
+      padding: 8px 18px;
+      border-radius: 25px;
+      margin: 5px;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--olive);
+      color: white;
+      border-color: var(--olive);
+    }
+
+    /* PROJECT CARDS */
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 100%;
+      transition: 0.35s;
+      border: 1px solid #e8e2d8;
+    }
+
+    .project-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 30px rgba(48,61,53,0.12);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 235px;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .project-content {
+      padding: 19px;
+    }
+
+    .project-content h5 {
+      color: var(--olive);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .project-content p {
+      color: #747970;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .project-category {
+      color: var(--terracotta);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .view-link {
+      color: var(--olive);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .view-link:hover {
+      color: var(--terracotta);
+    }
+
+    /* PRACTICE */
+    .practice-section {
+      background: #E8E7DC;
+    }
+
+    .practice-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    .practice-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .practice-card img {
+      width: 100%;
+      height: 215px;
+      object-fit: cover;
+    }
+
+    .practice-card h6 {
+      color: var(--cream);
+      padding: 15px 17px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background: #26332B;
+    color: white;
+    padding: 45px 0 20px;
+    text-align: center;
+}
+
+.footer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+footer p {
+    color: #D3D6CF;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.social-links a {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #68736B;
+      color: #E7C1A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.social-links a:hover {
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.copyright {
+    border-top: 1px solid #526057;
+    padding-top: 18px;
+    margin-top: 25px;
+    color: #D3D6CF;
+    font-size: 10px;
+}
+
+/* BACK TO TOP */
+
+.back-top {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    background: var(--dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.back-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-top:hover {
+    background: var(--terracotta);
+    color: white;
+}
+
+
+
+
+
+    /* ANIMATION */
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: 0.8s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width: 991px) {
+      .navbar .nav-link {
+        margin: 7px 0;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-image {
+        max-width: 320px;
+        height: 360px;
+        margin-top: 45px;
+      }
+    }
+
+    @media(max-width: 576px) {
+      .section-padding {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .outline-btn {
+        margin: 12px 0 0;
+      }
+
+      .hero-image {
+        height: 330px;
+      }
+
+      .project-card img {
+        height: 210px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-mark">I</span>Ishika Sharma
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#practice">Practice</a></li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 reveal">
+        <span class="section-tag">Graphic Designer · UI/UX Designer</span>
+        <h1>Designing ideas into <span>meaningful</span> experiences.</h1>
+        <p class="hero-text">
+          Hello, I'm Ishika Sharma. A creative designer passionate about
+          visual storytelling, thoughtful interfaces and building
+          meaningful digital experiences through design.
+        </p>
+        <a href="#projects" class="primary-btn">Explore My Work <i class="bi bi-arrow-right"></i></a>
+        <a href="#about" class="outline-btn">More About Me</a>
+      </div>
+
+      <div class="col-lg-5 text-center reveal">
+        <img src="images/header img.png" class="hero-image" alt="Ishika Sharma profile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section section-padding" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <img src="images/half.png" class="about-image" alt="Creative design workspace">
+      </div>
+
+      <div class="col-lg-7 reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I am a Graphic Designer and UI/UX Designer with an interest in
+          creating visually engaging and user-friendly designs. I enjoy
+          transforming ideas into creative visual solutions, from brand
+          identities and digital artwork to website and app interfaces.
+          I believe good design should be simple, purposeful and memorable.
+        </p>
+
+        <div class="row g-3 mt-3">
+          <div class="col-sm-6">
+            <div class="info-card">
+              <h5>My Focus</h5>
+              <p>Visual Identity, Digital Design & User Experience</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-card">
+              <h5>My Approach</h5>
+              <p>Creative Thinking, Simplicity & Attention to Detail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section-padding" id="skills">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">What I work with</span>
+      <h2 class="section-title">My Skills & Tools</h2>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-bezier2"></i><h6>Illustrator</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-image"></i><h6>Photoshop</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-columns-gap"></i><h6>Figma</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-palette"></i><h6>Canva</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-vector-pen"></i><h6>Graphic Design</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-phone"></i><h6>UI/UX Design</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-brush"></i><h6>Illustration</h6></div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="skill-box"><i class="bi bi-easel"></i><h6>Visual Design</h6></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education-section section-padding" id="education">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+
+      <h2 class="section-title">Education & Learning</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 reveal">
+        <div class="education-card">
+          <h5>Bachelor of Arts (BA)</h5>
+          <p>University of Delhi</p>
+          <small>Currently Pursuing</small>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="education-card">
+          <h5>Graphic Design & UI/UX Design</h5>
+          <p>Arena Animation</p>
+          <small>Course Completed · 2026</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section-padding" id="projects">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+     
+      <h2 class="section-title">My Projects</h2>
+      <p>Creative solutions built through design, research and visual storytelling.</p>
+    </div>
+
+  <div class="text-center mb-4">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="branding">Graphic</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+    </div>
+
+    <div class="row g-4" id="projectGrid">
+
+
+<div class="col-sm-6 col-lg-4 project-item" data-category="branding">
+        <div class="project-card">
+          <img src="images/poster home decor final-01.jpg" alt="Graphic Portfolio">
+          <div class="project-content">
+            <span class="project-category">Website Design</span>
+            <h5>Graphic Design Portfolio</h5>
+            <p>A creative graphic design portfolio showcasing visual identities, creative posters, and innovative designs that bring ideas to life.</p>
+            <a href="https://www.behance.net/ishikasharma42" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-6 col-lg-4 project-item" data-category="uiux">
+        <div class="project-card">
+          <img src="images/Artboard 19.png" alt="FitOS fitness app">
+          <div class="project-content">
+            <span class="project-category">UI/UX Design</span>
+            <h5>FitOS – Fitness App</h5>
+            <p>A fitness application designed to simplify workouts, nutrition and personal progress.</p>
+            <a href="https://www.behance.net/gallery/258641647/Fitness-Mobile-Application-FitOS" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 project-item" data-category="uiux">
+        <div class="project-card">
+          <img src="images/home helpie.png" alt="Home Helpie App">
+          <div class="project-content">
+            <span class="project-category">UI/UX Design</span>
+            <h5>Home Helpie</h5>
+            <p>A home-service app concept focused on convenient household assistance.</p>
+            <a href="https://www.behance.net/gallery/232242071/UrbanClap-application-UIUX-Design(HomeHelpie)" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <img src="images/neotech.png" alt="Neotech">
+          <div class="project-content">
+            <span class="project-category">Website Design</span>
+            <h5>Neotech</h5>
+            <p>A modern technical product website showcasing innovative solutions through a clean, intuitive, and futuristic digital experience.</p>
+            <a href=" https://ishika1077.github.io/products-web/" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <img src="images/animation 4.png" alt="Animation Website">
+          <div class="project-content">
+            <span class="project-category">Website Design</span>
+            <h5>AnimEdu</h5>
+            <p>An engaging animation website featuring creative motion graphics, smooth transitions, and visually immersive digital experiences.</p>
+            <a href=" https://ishika1077.github.io/Animation-2026/" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <img src="images/AI.png" alt="AI Website">
+          <div class="project-content">
+            <span class="project-category">Website Design</span>
+            <h5>Nexa Artificial Intelligence</h5>
+            <p>An innovative AI-powered website showcasing intelligent solutions through a modern, intuitive, and futuristic digital experience.</p>
+            <a href="https://ishika1077.github.io/AI-AOTM/" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+<div class="col-sm-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <img src="images/disney 1.png" alt="Disney website design">
+          <div class="project-content">
+            <span class="project-category">Website Design</span>
+            <h5>Disney World</h5>
+            <p>A magical Disney-inspired website bringing stories, characters, and enchanting experiences to life through immersive visuals and playful interactions.</p>
+            <a href="https://ishika1077.github.io/ishikaweb/" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-sm-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <img src="images/viksit bharat 2.png" alt="Website design">
+          <div class="project-content">
+            <span class="project-category">Website Design</span>
+            <h5>Viksit Bharat 2047</h5>
+            <p>A visionary website highlighting India's journey towards a developed nation through innovation, technology, and sustainable growth by 2047.</p>
+            <a href="https://ishika1077.github.io/AOTM-web/" class="view-link">View Project <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="practice-section section-padding" id="practice">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <span class="section-tag">Beyond projects</span>
+      <h2 class="section-title">Creative Practice</h2>
+      <p>A collection of experiments, illustrations and personal creative work.</p>
+    </div>
+
+   
+
+
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+             <a href="htmlpractice.html"><h3>HTML</h3></a>
+              <p>Created structured and semantic web pages.</p>
+             
+             
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+             <a href="jspractice.html"> <h3>JavaScript</h3></a>
+              <p>basic functionalities to understand JavaScript concepts.</p>
+             
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+             <a href="jq practice.html"><h3>Jquery</h3></a>
+              <p>Implemented dynamic elements for smoother user interactions.</p>
+       
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+             <a href="bootstrap practice.html"><h3>Bootstrap</h3></a>
+              <p>Developed responsive,Bootstrap components and grid system.</p>
+         
+             
+              </div>
+            </div>
+
+           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+             <a href="UIUX Practice.html"><h3>UI/UX</h3></a>
+              <p>Designing intuitive, user-friendly digital experiences with thoughtful interfaces and seamless interactions.</p>
+         
+             
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<!--<footer id="contact">
+  <section class="contact-section section-padding" id="contact">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Let's connect</span>
+      <h2  class="section-title">Have a Project in Mind?</h2>
+      <p style="color:var(--white)">I'm open to creative opportunities, collaborations and new experiences.</p>
+    </div>
+
+    
+
+        
+</section>
+<p>Email: ishikasharma7131@gmail.com</p>
+<p>Instagram: <a href="https://www.instagram.com/sketch_flow.art" style="color:var(--rose)">@sketch_flow.art</a></p>
+<p>Behance: <a href="https://www.behance.net/ishikasharma42"style="color:var(--rose)">Visit here</a></p>
+
+</footer>
+
+
+<footer>
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© 2026 Ishika Sharma. All Rights Reserved.</p>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+    <div class="footer-name">Ishika Sharma</div>
+  
+        <p>Email: ishikasharma7131@gmail.com</p>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/sketch_flow.art" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.behance.net/ishikasharma42" aria-label="Behance"><i class="bi bi-behance"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+    </div>
+
+    <div class="copyright">
+        © 2026 Ishika Sharma. Designed with creativity.
+    </div>
+</div>
+</footer>
+
+<a href="#home" class="back-top" id="backTop">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+  // PROJECT FILTER
+  $('.filter-btn:not(.practice-filter)').click(function() {
+    let filter = $(this).data('filter');
+
+    $('.filter-btn:not(.practice-filter)').removeClass('active');
+    $(this).addClass('active');
+
+    if (filter === 'all') {
+      $('.project-item').fadeIn(250);
+    } else {
+      $('.project-item').hide();
+      $('.project-item[data-category="' + filter + '"]').fadeIn(250);
+    }
+  });
+
+  // PRACTICE FILTER
+  $('.practice-filter').click(function() {
+    let filter = $(this).data('filter');
+
+    $('.practice-filter').removeClass('active');
+    $(this).addClass('active');
+
+    if (filter === 'all') {
+      $('.practice-item').fadeIn(250);
+    } else {
+      $('.practice-item').hide();
+      $('.practice-item[data-category="' + filter + '"]').fadeIn(250);
+    }
+  });
+
+  // CLOSE MOBILE NAV AFTER CLICK
+  $('.navbar-nav .nav-link, .navbar-nav .nav-contact').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // SCROLL REVEAL
+  function revealElements() {
+    $('.reveal').each(function() {
+      let position = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let height = $(window).height();
+
+      if (position < scroll + height - 70) {
+        $(this).addClass('show');
+      }
+    });
+  }
+
+  $(window).on('scroll load', revealElements);
+
+  // DEMO CONTACT FORM
+  $('#contactForm').submit(function(e) {
+    e.preventDefault();
+    $('#formMessage').text('Thank you! Please connect your form to an email service to receive messages.');
+    this.reset();
+  });
+
+});
+</script>
+
+</body>
+</html>
